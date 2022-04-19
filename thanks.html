@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/821b59ec713618ba9319bfed2337519e?family=Sansumi" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="twitter:title" content="805 Realty Co">
+    <meta property="og:image" content="https://805realtyco.com/Images/805RealtyCologo.svg">
+    <meta property="og:description" content="Thank you for contacting us! We will reply back as soon as possible.">
+    <meta name="author" content="Matt Corriveau">
+    <meta name="description" content="Thank you for contacting us! We will reply back as soon as possible.">
+    <title>Thank You - 805 Realty Co</title>
+</head>
+<body>
+    <header>
+        <h1>Evhan Blasingame</h1>
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="Images/805 Realty Co logo.svg" alt=""></a>
+        </div>
+        <div class="btn-toggle-nav" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <aside>
+            <nav class="nav-sidebar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <div class="nav-dd-services">
+                        <li><a onclick="toggleNavServices()" class="toggle-nav-sb">SERVICES</a>
+                            <div id="myDropdownM" class="dropdown-mc">
+                                <ul>
+                                    <li><a href="services.html#selling">Selling</a></li>
+                                    <li><a href="services.html#buying">Buying</a></li>
+                                    <li><a href="services.html#loan">Home Loan</a></li>
+                                </ul>
+                                <div class="line-bottom"></div>
+                            </div>
+                        </li> 
+                    </div>  
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <script src="toggle_menu.js"></script>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <div class="dropdown">
+                <li><a onclick="myFunction()" class="dropbtn">SERVICES</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <ul>
+                            <a href="services.html#selling"><li>Selling</li></a>
+                            <a href="services.html#buying"><li>Buying</li></a>
+                            <a href="services.html#loan"><li>Home Loan</li></a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <script src="services_dropdown.js"></script>
+    <main id="main-footer">
+        <section class="container">
+            <section class="container-header">
+                <section class="thanks">
+                    <h1>Thank you so much for contacting us!</h1> 
+                </section>  
+            </section>
+            <div class="thanks-img">
+                <img src="Images/thanks.png" alt="thank you">
+            </div>
+            <section class="thanks-h2">
+                <h2>We will reply back as soon as possible</h2>
+                <h2>Feel free to explore the rest of the site if you haven't already done so already</h2>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>805 Realty Co &copy; 2022 <a class="footer-phone-dt" href="">111-111-1111</a><a class="footer-phone-m" href="">C: 111-111-1111</a><a class="footer-contact" href="contact.html">Contact Us</a><span class="footer-address">Coast & County Brokers 847 Monterey St. #211, San Luis Obispo, CA</span></p>
+        <p></p>
+        <p>DRE #NUMBER</p>
+        <div class="footer-images">
+            <img class="footer-img1" src="Images/national-association-of-realtors-logo.png" alt="national association of realtors logo">
+            <img class="footer-img2" src="Images/california-association-of-realtors-logo-vector.png" alt="california association of realtors logo vector">
+            <img class="footer-img4" src="Images/CRMLS.png" alt="California Regional Multiple Listing Service">
+            <img class="footer-img3" src="Images/Give-Back_SLO-Association-of-Realtors.jpg" alt="SLO association of realtors">
+        </div>
+    </footer>
+</body>
+</html>

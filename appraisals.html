@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/821b59ec713618ba9319bfed2337519e?family=Sansumi" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="twitter:title" content="805 Realty Co">
+    <meta property="og:image" content="https://805realtyco.com/Images/805RealtyCologo.svg">
+    <meta property="og:description" content="Here I explain the differences between CMA and appraisals.">
+    <meta property="og:title" content="805 Realty Co">
+    <meta name="author" content="Matt Corriveau">
+    <meta name="description" content="Here I explain the differences between CMA and appraisals.">
+    <title>CMA VS Appraisals - 805 Realty Co</title>
+</head>
+<body>
+    <header>
+        <h1>Evhan Blasingame</h1>
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="Images/805 Realty Co logo.svg" alt=""></a>
+        </div>
+        <div class="btn-toggle-nav" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <aside>
+            <nav class="nav-sidebar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <div class="nav-dd-services">
+                        <li><a onclick="toggleNavServices()" class="toggle-nav-sb">SERVICES</a>
+                            <div id="myDropdownM" class="dropdown-mc">
+                                <ul>
+                                    <li><a href="services.html#selling">Selling</a></li>
+                                    <li><a href="services.html#buying">Buying</a></li>
+                                    <li><a href="services.html#loan">Home Loan</a></li>
+                                </ul>
+                                <div class="line-bottom"></div>
+                            </div>
+                        </li> 
+                    </div>  
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <script src="toggle_menu.js"></script>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <div class="dropdown">
+                <li><a onclick="myFunction()" class="dropbtn">SERVICES</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <ul>
+                            <a href="services.html#selling"><li>Selling</li></a>
+                            <a href="services.html#buying"><li>Buying</li></a>
+                            <a href="services.html#loan"><li>Home Loan</li></a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <script src="services_dropdown.js"></script>
+    <main>
+        <section class="container">
+            <section class="container-header">
+                <h1>FAQ</h1>
+            </section>
+            <div class="faq-menu">
+                <div class="faq-menu-header">
+                    <div></div>
+                </div>
+                <div class="faq-menu-body">
+                    <div class="fml">
+                        <ul>
+                            <li><a href="commissions.html#commissions">How Do Real Estate Commissions Work?</a></li>
+                            <li><a href="why-realtor.html#why-realtor">Why Do I Need a Realtor?</a></li>            
+                            <li><a href="cma.html#cma">What is a CMA?</a></li>
+                            <li><a href="price.html#price">How Should I Price my Home?</a></li>
+                        </ul>
+                    </div>
+                    <div class="fmm">
+                        <ul>                            
+                            <li><a href="curb.html#curb">What is Curb Appeal and Why Does it Matter?</a><li>      
+                            <li><a href="open.html#open">How Do I Prepare for an Open House?</a></li>
+                            <li><a href="sell.html#sell">How Do I Sell My Home in a Buyer's Market?</a></li>
+                            <li><a href="short.html#short">What is a Short Sale?</a></li> 
+                        </ul>
+                    </div>
+                    <div class="fmr">         
+                        <ul>
+                            <li><a href="online.html#online">Should I Trust Online Home Value Estimates?</a></li> 
+                            <li><a href="appraisals.html#appraisals">CMA VS Appraisals</a></li> 
+                            <li><a href="value.html#value">Why Might Similar Homes Have Different Values?</a><li> 
+                        </ul>
+                    </div>
+                </div>               
+            </div>
+            <section class="faq-body">
+                <section class="faq-body-content" id="appraisals">
+                    <section class="faq-body-header">
+                        <h2>CMA VS Appraisals</h2>
+                    </section>
+                    <h3 id="lower">Market Value</h3>
+                    <p>Establishing a home’s market value is equally important to buyers, sellers, lenders and real estate professionals so that transactions can proceed quickly and efficiently. A real estate professional may prepare a comparative or comprehensive market analysis (CMA) for their sellers to help them choose a listing price. The CMA includes recently sold homes and homes for sale in the seller’s neighborhood that are most similar to the seller’s home in appearance, features, and general price range.</p>
+                    <h3>Home Value</h3>
+                    <p>Although the CMA is used to help determine current market value, it does not establish the seller’s home value. In fact, the seller’s home is typically not even featured in the CMA. The CMA is merely a guide to help the seller learn what’s happening in their local market, so they can better understand where their home fits in term of price ranges, based on location, features and condition. Once the home is listed on the open market, a buyer makes an offer, usually based in part on a CMA the buyer’s agent has prepared. CMAs can help buyers better understand the local market as well as sellers. If the buyer is receiving financing through a bank, the bank will order an appraisal. Unlike the CMA, a bank appraisal is a professional determination of a home’s value. It’s performed by a licensed appraiser, using guidelines established by the Federal Housing Finance Agency, which regulates federal housing loan guarantors such as FHA, VA and housing loan purchasers Fannie Mae and Freddie Mac.</p>
+                    <h3>Appraisal</h3>
+                    <p>An appraisal is a comprehensive look at a home’s location, condition, and eligibility for federal guarantees. For example, a home that doesn’t meet safety requirements such as handrails on steps will not be eligible for FHA or VA loans until the handrail is installed or repaired. Appraisers use the same data in their market research to find comparable homes as REALTORS® do. They are also members of the MLS, but they also have additional guidelines from the bank to follow that minimize risk to the bank. They may take off value for slow-moving markets, or markets with high rates of foreclosures. If prices are falling, the appraiser takes the number of days a home has been on the market far more conservatively.</p>
+                    <p>When the appraisal is finished, the bank makes the decision to fund the loan, or it may require the seller to fix certain items and show proof that the repairs have been made before letting the loan proceed. If the loan doesn’t meet lending guidelines, the bank will decline the loan. Despite stricter lending and appraisal standards, most buyers’ loan applications go through to closing – nearly 85 percent. One reason for that is that real estate agents are preparing CMAs that are better tuned to lending standards, for sellers and buyers to better understand not only what the market is doing, but how much lenders are willing to finance.</p>
+                </section>
+            </section>   
+        </section>   
+        <div class="topbutton">
+                <i class="fas fa-chevron-up" onclick="topFunction()" id="topBtn" title="Go to top"></i>
+                <script src="top_button.js"></script>
+        </div>
+    </main>
+    <footer>
+        <p>805 Realty Co &copy; 2022 <a class="footer-phone-dt" href="">111-111-1111</a><a class="footer-phone-m" href="">C: 111-111-1111</a><a class="footer-contact" href="contact.html">Contact Us</a><span class="footer-address">Coast & County Brokers 847 Monterey St. #211, San Luis Obispo, CA</span></p>
+        <p></p>
+        <p>DRE #NUMBER</p>
+        <div class="footer-images">
+            <img class="footer-img1" src="Images/national-association-of-realtors-logo.png" alt="national association of realtors logo">
+            <img class="footer-img2" src="Images/california-association-of-realtors-logo-vector.png" alt="california association of realtors logo vector">
+            <img class="footer-img4" src="Images/CRMLS.png" alt="California Regional Multiple Listing Service">
+            <img class="footer-img3" src="Images/Give-Back_SLO-Association-of-Realtors.jpg" alt="SLO association of realtors">
+        </div>
+    </footer>
+</body>
+</html>

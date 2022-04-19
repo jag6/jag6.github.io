@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/821b59ec713618ba9319bfed2337519e?family=Sansumi" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="twitter:title" content="805 Realty Co">
+    <meta property="og:image" content="https://805realtyco.com/Images/805RealtyCologo.svg">
+    <meta property="og:description" content="Here I explain why similar homes can have different values.">
+    <meta property="og:title" content="805 Realty Co">
+    <meta name="author" content="Matt Corriveau">
+    <meta name="description" content="Here I explain why similar homes can have different values.">
+    <title>Similar Homes with Different Values - 805 Realty Co</title>
+</head>
+<body>
+    <header>
+        <h1>Evhan Blasingame</h1>
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="Images/805 Realty Co logo.svg" alt=""></a>
+        </div>
+        <div class="btn-toggle-nav" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <aside>
+            <nav class="nav-sidebar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <div class="nav-dd-services">
+                        <li><a onclick="toggleNavServices()" class="toggle-nav-sb">SERVICES</a>
+                            <div id="myDropdownM" class="dropdown-mc">
+                                <ul>
+                                    <li><a href="services.html#selling">Selling</a></li>
+                                    <li><a href="services.html#buying">Buying</a></li>
+                                    <li><a href="services.html#loan">Home Loan</a></li>
+                                </ul>
+                                <div class="line-bottom"></div>
+                            </div>
+                        </li> 
+                    </div>  
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <script src="toggle_menu.js"></script>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <div class="dropdown">
+                <li><a onclick="myFunction()" class="dropbtn">SERVICES</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <ul>
+                            <a href="services.html#selling"><li>Selling</li></a>
+                            <a href="services.html#buying"><li>Buying</li></a>
+                            <a href="services.html#loan"><li>Home Loan</li></a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <script src="services_dropdown.js"></script>
+    <main>
+        <section class="container">
+            <section class="container-header">
+                <h1>FAQ</h1>
+            </section>
+            <div class="faq-menu">
+                <div class="faq-menu-header">
+                    <div></div>
+                </div>
+                <div class="faq-menu-body">
+                    <div class="fml">
+                        <ul>
+                            <li><a href="commissions.html#commissions">How Do Real Estate Commissions Work?</a></li>
+                            <li><a href="why-realtor.html#why-realtor">Why Do I Need a Realtor?</a></li>            
+                            <li><a href="cma.html#cma">What is a CMA?</a></li>
+                            <li><a href="price.html#price">How Should I Price my Home?</a></li>
+                        </ul>
+                    </div>
+                    <div class="fmm">
+                        <ul>                            
+                            <li><a href="curb.html#curb">What is Curb Appeal and Why Does it Matter?</a><li>      
+                            <li><a href="open.html#open">How Do I Prepare for an Open House?</a></li>
+                            <li><a href="sell.html#sell">How Do I Sell My Home in a Buyer's Market?</a></li>
+                            <li><a href="short.html#short">What is a Short Sale?</a></li> 
+                        </ul>
+                    </div>
+                    <div class="fmr">         
+                        <ul>
+                            <li><a href="online.html#online">Should I Trust Online Home Value Estimates?</a></li> 
+                            <li><a href="appraisals.html#appraisals">CMA VS Appraisals</a></li> 
+                            <li><a href="value.html#value">Why Might Similar Homes Have Different Values?</a><li> 
+                        </ul>
+                    </div>
+                </div>               
+            </div>
+            <section class="faq-body">
+                <section class="faq-body-content" id="value">
+                    <section class="faq-body-header">
+                        <h2>Why Might Similar Homes Have Different Values?</h2>
+                    </section>
+                    <p>In a neighborhood of similar homes, why is one worth more than another? That’s the question that’s teased buyers and sellers for ages, but the answer is simple.</p>
+                    <h3>Every home is different</h3>
+                    <p>When a home is sold, a willing seller and a willing buyer have just announced to the world the value of that home. From there, other similar homes are benchmarked, but other factors come into play. The most important are: 
+                        <ul>
+                            <li><span class="pb">Location: </span>The closer a home is to jobs, parks, transportation, schools, and community services, the more desirable it is.</li>
+                            <li><span class="pb">Size: </span>Square footage impacts home values because they’re built using more materials. Larger lot sizes mean more privacy.</li>
+                            <li><span class="pb">Number of bedrooms and baths: </span>Square footage impacts home values because they’re built using more materials. Larger lot sizes mean more privacy.</li>
+                            <li><span class="pb">Features and finishes: </span>Over time, median homes have grown larger. Decades ago, household members shared bedrooms and baths without complaint, but today, families want more privacy. The median home purchased today is a three-bedroom, two-bath home.</li>
+                            <li><span class="pb">Condition: </span>The closer a home is to new construction, the more it will retain its value. It’s perceived as more modern, up to date, and perhaps safer. Homes that are not updated or in poor repair sell for less. It’s a good idea for homeowners to keep their homes updated and in top repair.</li>
+                            <li><span class="pb">Curb appeal: </span>From the street, the home looks clean, fresh, and inviting. Fresh landscaping and flowers won’t change the size or location, but they certainly add charm.</li>
+                        </ul>
+                    </p>
+                    <p><span class="faq-i">When two homes are identical in the same neighborhood, a higher price may come down to something as simple as views, or paint colors, or the overall taste of the homeowner.</span></p>
+                    <p>Valuing a home will never be an exact science, but if you buy wisely, keep your home updated and in good repair, you should recoup most if not all of your investment.</p>
+                </section>   
+            </section>
+        </section>
+        <div class="topbutton">
+            <i class="fas fa-chevron-up" onclick="topFunction()" id="topBtn" title="Go to top"></i>
+            <script src="top_button.js"></script>
+        </div>
+    </main>
+    <footer>
+        <p>805 Realty Co &copy; 2022 <a class="footer-phone-dt" href="">111-111-1111</a><a class="footer-phone-m" href="">C: 111-111-1111</a><a class="footer-contact" href="contact.html">Contact Us</a><span class="footer-address">Coast & County Brokers 847 Monterey St. #211, San Luis Obispo, CA</span></p>
+        <p></p>
+        <p>DRE #NUMBER</p>
+        <div class="footer-images">
+            <img class="footer-img1" src="Images/national-association-of-realtors-logo.png" alt="national association of realtors logo">
+            <img class="footer-img2" src="Images/california-association-of-realtors-logo-vector.png" alt="california association of realtors logo vector">
+            <img class="footer-img4" src="Images/CRMLS.png" alt="California Regional Multiple Listing Service">
+            <img class="footer-img3" src="Images/Give-Back_SLO-Association-of-Realtors.jpg" alt="SLO association of realtors">
+        </div>
+    </footer>
+</body>
+</html>

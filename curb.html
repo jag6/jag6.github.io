@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/821b59ec713618ba9319bfed2337519e?family=Sansumi" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="twitter:title" content="805 Realty Co">
+    <meta property="og:image" content="https://805realtyco.com/Images/805RealtyCologo.svg">
+    <meta property="og:description" content="Here I explain what curb appeal is and why it's important.">
+    <meta property="og:title" content="805 Realty Co">
+    <meta name="author" content="Matt Corriveau">
+    <meta name="description" content="Here I explain what curb appeal is and why it's important.">
+    <title>Curb Appeal - 805 Realty Co</title>
+</head>
+<body>
+    <header>
+        <h1>Evhan Blasingame</h1>
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="Images/805 Realty Co logo.svg" alt=""></a>
+        </div>
+        <div class="btn-toggle-nav" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <aside>
+            <nav class="nav-sidebar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <div class="nav-dd-services">
+                        <li><a onclick="toggleNavServices()" class="toggle-nav-sb">SERVICES</a>
+                            <div id="myDropdownM" class="dropdown-mc">
+                                <ul>
+                                    <li><a href="services.html#selling">Selling</a></li>
+                                    <li><a href="services.html#buying">Buying</a></li>
+                                    <li><a href="services.html#loan">Home Loan</a></li>
+                                </ul>
+                                <div class="line-bottom"></div>
+                            </div>
+                        </li> 
+                    </div>  
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <script src="toggle_menu.js"></script>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <div class="dropdown">
+                <li><a onclick="myFunction()" class="dropbtn">SERVICES</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <ul>
+                            <a href="services.html#selling"><li>Selling</li></a>
+                            <a href="services.html#buying"><li>Buying</li></a>
+                            <a href="services.html#loan"><li>Home Loan</li></a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <script src="services_dropdown.js"></script>
+    <main>
+        <section class="container">
+            <section class="container-header">
+                <h1>FAQ</h1>
+            </section>
+            <div class="faq-menu">
+                <div class="faq-menu-header">
+                    <div></div>
+                </div>
+                <div class="faq-menu-body">
+                    <div class="fml">
+                        <ul>
+                            <li><a href="commissions.html#commissions">How Do Real Estate Commissions Work?</a></li>
+                            <li><a href="why-realtor.html#why-realtor">Why Do I Need a Realtor?</a></li>            
+                            <li><a href="cma.html#cma">What is a CMA?</a></li>
+                            <li><a href="price.html#price">How Should I Price my Home?</a></li>
+                        </ul>
+                    </div>
+                    <div class="fmm">
+                        <ul>                            
+                            <li><a href="curb.html#curb">What is Curb Appeal and Why Does it Matter?</a><li>      
+                            <li><a href="open.html#open">How Do I Prepare for an Open House?</a></li>
+                            <li><a href="sell.html#sell">How Do I Sell My Home in a Buyer's Market?</a></li>
+                            <li><a href="short.html#short">What is a Short Sale?</a></li> 
+                        </ul>
+                    </div>
+                    <div class="fmr">         
+                        <ul>
+                            <li><a href="online.html#online">Should I Trust Online Home Value Estimates?</a></li> 
+                            <li><a href="appraisals.html#appraisals">CMA VS Appraisals</a></li> 
+                            <li><a href="value.html#value">Why Might Similar Homes Have Different Values?</a><li> 
+                        </ul>
+                    </div>
+                </div>               
+            </div>
+            <section class="faq-body">
+                <section class="faq-body-content" id="curb">
+                    <section class="faq-body-header">
+                        <h2>What is Curb Appeal and Why Does it Matter?</h2>
+                    </section>
+                    <h3>First Impressions</h3>
+                    <p>Most buyers form their first impression of your home before they even get out of their cars. This is “curb appeal,” or the view from the curb that tells the buyer how attractive and well-maintained your home is compared to other homes. In a competitive market, it takes more than trimming the hedges and planting a few flowers to create curb appeal.</p>
+                    <p><span class="pb">The exterior of your home must be in pristine condition</span> – freshly painted, cleared of clutter, with no visible repairs needed. A broken step, overgrown bush, or abandoned toys in the yard can spoil the appearance and your buyer’s first impression.</p>
+                    <h3>Curb Appeal</h3>
+                    <p>Curb appeal is important because it sets the tone for what the buyer is going to see inside. If the buyer likes the exterior, he or she will be predisposed to also like the interior and you’re that much closer to selling your home. To see what needs to be done to sell your home faster and for a higher price, go outside, stand on the curb and try to look at your home the way the buyer will.</p>
+                    <ul>
+                        <li><span class="pb">Walkways/driveways: </span>Make sure walkways are clear of snow, weeds, or debris. Repair or replace cracked steps or pavers. Driveways should also be clear of vehicles, toys and debris. Park cars in the garage.</li>
+                        <li><span class="pb">Landscaping: </span>Keep your lawn mowed, edged and watered. Prune dead branches and plants. Weed flower beds and replace leggy, thin landscaping with fresh plants and flowers.</li>
+                        <li><span class="pb">Exterior: </span>Replace loose or damaged roof shingles, clean the gutters, and paint and caulk window trim and doors. Repaint the front door an eye-catching color that complements the rest of the exterior. Replace broken windows.</li>
+                        <li><span class="pb">Entry: </span>Power wash siding, brick, windows, and porches. Paint or replace furniture such as rocking chairs or porch swings. Replace mailboxes, light fixtures, door knobs or any other fixture that looks less than fresh. Put out a welcoming new floormat.</li>
+                    </ul>
+                    <p>Some parts of your home may require more work than others, but it’s well worth it to get buyers eager to see what’s inside.</p>
+                </section>
+            </section>   
+        </section>   
+        <div class="topbutton">
+                <i class="fas fa-chevron-up" onclick="topFunction()" id="topBtn" title="Go to top"></i>
+                <script src="top_button.js"></script>
+        </div>
+    </main>
+    <footer>
+        <p>805 Realty Co &copy; 2022 <a class="footer-phone-dt" href="">111-111-1111</a><a class="footer-phone-m" href="">C: 111-111-1111</a><a class="footer-contact" href="contact.html">Contact Us</a><span class="footer-address">Coast & County Brokers 847 Monterey St. #211, San Luis Obispo, CA</span></p>
+        <p></p>
+        <p>DRE #NUMBER</p>
+        <div class="footer-images">
+            <img class="footer-img1" src="Images/national-association-of-realtors-logo.png" alt="national association of realtors logo">
+            <img class="footer-img2" src="Images/california-association-of-realtors-logo-vector.png" alt="california association of realtors logo vector">
+            <img class="footer-img4" src="Images/CRMLS.png" alt="California Regional Multiple Listing Service">
+            <img class="footer-img3" src="Images/Give-Back_SLO-Association-of-Realtors.jpg" alt="SLO association of realtors">
+        </div>
+    </footer>
+</body>
+</html>
