@@ -24,6 +24,11 @@ time, mark, audio, video {
     background:transparent;
 }
 
+@import url(https://db.onlinewebfonts.com/c/821b59ec713618ba9319bfed2337519e?family=Sansumi);
+
+
+@font-face {font-family: "Sansumi"; src: url("//db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.eot"); src: url("//db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.woff") format("woff"), url("//db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.svg#Sansumi") format("svg"); }
+
 html {
     scroll-behavior: smooth;
     line-height:1.5;
