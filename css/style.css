@@ -1,0 +1,162 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 88px; line-height:1.5; }
+html, body { min-height: 100vh; position: relative; }
+body { font-size: 8px; font-family: 'Noto Sans', sans-serif; }
+
+main {
+    display: flex; justify-content: center; flex-direction: column; 
+    margin: 2rem auto 0 auto;
+    padding: 0 5% 112px 5%;
+}
+
+h1 { font-size: 48px; line-height: 72px; }
+h2 { font-size: 32px; line-height: 64px; }
+h3 { font-size: 24px; line-height: 48px; }
+h4 { font-size: 21px; line-height: 40px; }
+p { font-size: 16px; line-height: 32px; }
+small { font-size: 14px; line-height: 24px; }
+button { font-family: 'Noto Sans', sans-serif; }
+
+h1, h2 { font-weight: 700; }
+
+.ta-center { text-align: center; }
+
+.margin-top-1 { margin-top: 1rem; }
+.margin-top-2 { margin-top: 2rem; }
+.margin-top-3 { margin-top: 3rem; }
+.margin-top-4 { margin-top: 4rem; }
+.margin-bottom-1 { margin-bottom: 1rem; }
+.margin-bottom-2 { margin-bottom: 2rem; }
+.margin-bottom-3 { margin-bottom: 3rem; }
+.margin-bottom-4 { margin-bottom: 4rem; }
+
+div:has(p) { margin-top: 1rem; }
+
+
+/*DARK/LIGHT MODE*/
+
+@media (prefers-color-scheme: dark) {
+    body { background-color: #1e2028; color: #dbdee2; }
+}
+@media (prefers-color-scheme: light) {
+    body { background-color: #f5f5f5; color: #111; }
+}
+
+
+/*HEADER*/
+
+header {
+    display: flex; flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem 3%;
+    background-color: #1a1c23;
+}
+header nav ul { display: flex; flex-direction: row; }
+nav ul li { list-style: none; margin: 0 1rem; }
+nav ul li a  { 
+    font-size: 20px; line-height: 32px; color: #fff; 
+    border-top: 2px transparent solid; border-bottom: 2px transparent solid; 
+}
+nav ul li a:hover { 
+    border-top: 2px #fff solid; transition: .3s ease-in-out; 
+    border-bottom: 2px #fff solid; transition: .3s ease-in-out; 
+}
+
+
+/*FOOTER*/
+
+footer {
+    position: absolute;
+    width: 100%; height: 48px;
+    bottom: 0;
+    padding: 0 3%;
+    background-color: #1a1c23;
+}
+footer p { line-height: 48px; }
+
+
+/*TOP HEADER*/
+
+.top-header { margin: 0 auto 2rem auto; }
+
+
+/*APOD*/
+
+.apod {
+    display: flex; flex-direction: row;
+    justify-content: space-between; align-items: center;
+    max-width: 1440px; margin: 0 auto; 
+}
+.apod section:has(h1), .apod div:has(img, iframe) { width: 50%; }
+.apod div:has(img, iframe) img, iframe { width: 100%; max-width: 90%; height: auto; }
+
+@media only screen and (max-width: 1100px) {
+    .apod { flex-direction: column; }
+    .apod div:has(img, iframe) { margin-bottom: 2rem; }
+    .apod section:has(h1), .apod div:has(img, iframe) { width: 100%; }
+    .apod div:has(img, iframe) img, iframe { max-width: 1100px; }
+}
+
+
+/*CRYPTO*/
+
+.crypto-container {
+    display: flex; flex-wrap: wrap;
+    width: 100%; max-width: 2000px;
+    margin: 0 auto; justify-content: space-between;
+}
+.crypto-ticker-container { width: 80%; }
+.crypto-ticker-btns { 
+    width: 20%; 
+    display: flex; 
+    justify-content: center; align-items: flex-start;
+    margin: 0 auto; 
+}
+
+.crypto-ticker-btns ul { 
+    display: flex; flex-direction: column;
+    margin: 0 auto; justify-content: center;
+}
+.crypto-ticker-btns ul { list-style: none; }
+.crypto-ticker-btns ul li { margin: .5rem 0; }
+.crypto-ticker-btns ul li button {
+    font-size: 16px; line-height: 32px;
+    border-radius: 5px;
+    padding: 0 1rem;
+    background-color: #604BFA; color: #fff;
+    width: 100px;
+}
+.crypto-ticker-btns ul li button:hover { cursor: pointer; }
+
+@media only screen and (max-width: 576px) {
+    .crypto-ticker-container { width: 100%; }
+    .crypto-ticker-btns { width: 100%; margin: 2rem auto 0 auto; }
+    .crypto-ticker-btns ul { flex-flow: row wrap; justify-content: space-around; }
+    .crypto-ticker-btns ul li { margin: 1rem; }
+}

@@ -1,0 +1,1 @@
+export const pageTitle = document.querySelector('title');
