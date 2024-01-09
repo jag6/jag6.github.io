@@ -18,18 +18,10 @@ customElements.define('nav-component', class extends HTMLElement {
         this.innerHTML = `
             <nav>
                 <ul>
-                    <li>
-                        <a href="/#/">HOME</a>
-                    </li>
-                    <li>
-                        <a href="/#/nasa">NASA</a>
-                    </li>
-                    <li>
-                        <a href="/#/wotd">WOTD</a>
-                    </li>
-                    <li>
-                        <a href="/#/crypto">CRYPTO</a>
-                    </li>
+                    <li><a href="/#/">HOME</a></li>
+                    <li><a href="/#/nasa">NASA</a></li>
+                    <li><a href="/#/wotd">WOTD</a></li>
+                    <li><a href="/#/crypto">CRYPTO</a></li>
                 </ul>
             </nav>
         `;

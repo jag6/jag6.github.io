@@ -1,11 +1,11 @@
-import { FetchAPI } from "../api/fetch.js";
+import { fetchAPI } from "../helpers/fetch.js";
 import { pageTitle } from "../utils.js";
 
 const NASA = {
     render: async () => {
         pageTitle.textContent = 'NASA APOD';
         const url = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
-        const apod = await FetchAPI.getFetch(url);
+        const apod = await fetchAPI(url);
         return `
             <section class="apod">
                 ${apod.media_type === 'image'

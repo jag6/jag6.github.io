@@ -1,10 +1,10 @@
-import { CryptoTicker } from "../classes/crypto.js";
+import { cryptoTicker } from "../helpers/crypto.js";
 import topHeader from "../components/topHeader.js";
 import { pageTitle } from "../utils.js";
 
 const CryptoScreen = {
     render: () => {
-        pageTitle.textContent = 'Crypto Price Ticker'
+        pageTitle.textContent = 'Crypto Price Ticker';
         return `
             ${topHeader.render('BTC Price Ticker')}
             <div class="crypto-container">
@@ -23,7 +23,7 @@ const CryptoScreen = {
         `;
     },
     after_render: () => {
-        let ticker = CryptoTicker.Ticker('BTC');
+        let ticker = cryptoTicker('BTC');
         ticker;
         const cryptoHeader = document.querySelector('h1');
         const clearCanvas = () => {
@@ -31,13 +31,13 @@ const CryptoScreen = {
             const container = document.querySelector('.crypto-ticker-container');
             container.insertAdjacentHTML('afterbegin', '<canvas></canvas>');
         }
-        // Switch to BTC Ticker
+        
         const toggleTickers = (btn, label) => {
             const tickerBtn = document.getElementById(btn);
             tickerBtn.addEventListener('click', () => {
                 clearCanvas();
                 cryptoHeader.textContent = `${label} Price Ticker`;
-                ticker = CryptoTicker.Ticker(`${label}`);
+                ticker = cryptoTicker(`${label}`);
             });
         }
         toggleTickers('btc-btn', 'BTC');
