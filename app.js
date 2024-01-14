@@ -1,13 +1,11 @@
 import Home from "./screens/home.js";
 import NASA from "./screens/nasa.js";
-import WOTD from "./screens/word.js";
 import CryptoScreen from "./screens/crypto.js";
 import Error404 from "./screens/404.js";
 
 const routes = {
     '/': Home,
     '/nasa': NASA,
-    '/wotd': WOTD,
     '/crypto': CryptoScreen
 }
 

@@ -31,8 +31,7 @@ const CryptoScreen = {
             const container = document.querySelector('.crypto-ticker-container');
             container.insertAdjacentHTML('afterbegin', '<canvas></canvas>');
         }
-        
-        const toggleTickers = (btn, label) => {
+        const toggleTicker = (btn, label) => {
             const tickerBtn = document.getElementById(btn);
             tickerBtn.addEventListener('click', () => {
                 clearCanvas();
@@ -40,10 +39,13 @@ const CryptoScreen = {
                 ticker = cryptoTicker(`${label}`);
             });
         }
-        toggleTickers('btc-btn', 'BTC');
-        toggleTickers('eth-btn', 'ETH');
-        toggleTickers('ada-btn', 'ADA');
-        toggleTickers('sol-btn', 'SOL');
+        const coins = [['btc-btn', 'BTC'], ['eth-btn', 'ETH'], ['ada-btn', 'ADA'], ['sol-btn', 'SOL']];
+        const toggleTickers = () => {
+            for(let i = 0; i < coins.length; i++) {
+                toggleTicker(coins[i][0], coins[i][1])
+            }
+        }
+        toggleTickers();
     }
 }
 
