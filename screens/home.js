@@ -1,7 +1,7 @@
 import { fetchAPI } from "../helpers/fetch.js";
 import topHeader from "../components/topHeader.js";
 import { pageTitle } from "../utils.js";
-import { key, value } from "../data/rsg.js";
+import { getScriptures } from "../helpers/rsg.js";
 
 const Home = {
     render: async () => {
@@ -38,13 +38,16 @@ const Home = {
                     </li>
                     <li>
                         <section><h2>SCRIPTURE</h2></section>
-                        <p>Please read ${key} ${value}.</p>
+                        <p>Choose from any one of the following:</p>
+                        <ul id="scripture-list"></ul>
                     </li>
                 </ul>
             </section>
         `;
     },
-    after_render:() => {}
+    after_render:() => {
+        getScriptures();
+    }
 }
 
 export default Home;

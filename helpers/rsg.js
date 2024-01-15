@@ -84,7 +84,16 @@ const bibleBooks = {
     "Revelation": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
 };
 
-export let key = Object.keys(bibleBooks);
-key = key[Math.floor(Math.random() * key.length)];
-export let value = bibleBooks[key];
-value = value[Math.floor(Math.random() * value.length)];
+export const getScriptures = () => {
+    const scriptureList = document.getElementById('scripture-list');
+    for (let i = 0; i < 5; i++) {
+        let key = Object.keys(bibleBooks);
+        key = key[Math.floor(Math.random() * key.length)];
+        let value = bibleBooks[key];
+        value = value[Math.floor(Math.random() * value.length)];
+        // append to DOM
+        let scripture = document.createElement('li');
+        scripture.textContent = key + ' ' + value;
+        scriptureList.append(scripture);
+    }
+}

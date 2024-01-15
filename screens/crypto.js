@@ -40,12 +40,9 @@ const CryptoScreen = {
             });
         }
         const coins = [['btc-btn', 'BTC'], ['eth-btn', 'ETH'], ['ada-btn', 'ADA'], ['sol-btn', 'SOL']];
-        const toggleTickers = () => {
-            for(let i = 0; i < coins.length; i++) {
-                toggleTicker(coins[i][0], coins[i][1])
-            }
+        for(let i = 0; i < coins.length; i++) {
+            toggleTicker(coins[i][0], coins[i][1])
         }
-        toggleTickers();
     }
 }
 
