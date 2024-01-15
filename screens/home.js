@@ -1,6 +1,7 @@
 import { fetchAPI } from "../helpers/fetch.js";
 import topHeader from "../components/topHeader.js";
 import { pageTitle } from "../utils.js";
+import { key, value } from "../data/rsg.js";
 
 const Home = {
     render: async () => {
@@ -34,6 +35,10 @@ const Home = {
                     <li>
                         <section><h2>DARK JOKE</h2></section>
                         <p>${darkJoke.joke}</p>
+                    </li>
+                    <li>
+                        <section><h2>SCRIPTURE</h2></section>
+                        <p>Please read ${key} ${value}.</p>
                     </li>
                 </ul>
             </section>
