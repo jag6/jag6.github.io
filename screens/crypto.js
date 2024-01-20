@@ -13,10 +13,10 @@ const CryptoScreen = {
                 </div>
                 <div class="crypto-ticker-btns">
                     <ul>
-                        <li><button id="btc-btn">BITCOIN</button></li>
-                        <li><button id="eth-btn">ETH</button></li>
-                        <li><button id="ada-btn">ADA</button></li>
-                        <li><button id="sol-btn">SOL</button></li>
+                        <li><button id="btc-btn" aria-label="Display Bitcoin Ticker Button">BITCOIN</button></li>
+                        <li><button id="eth-btn" aria-label="Display Ethereum Ticker Button">ETH</button></li>
+                        <li><button id="ada-btn" aria-label="Display Cardano Ticker Button">ADA</button></li>
+                        <li><button id="sol-btn" aria-label="Display Solana Ticker Button">SOL</button></li>
                     </ul>
                 </div>
             </div>
