@@ -44,6 +44,11 @@
     <meta property="og:url" content="https://jag6.github.io"/>
     <!-- APP -->
     <script type="module" src="/app.js" defer></script>
+    <!-- Components -->
+    <script src="/components/header.js" defer></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <!-- SW -->
     <script>
         if('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js')
@@ -57,10 +62,6 @@
             console.log('Service workers not supported')
         }
     </script>
-    <!-- Components -->
-    <script src="/components/header.js" defer></script>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 </head>
 <body>
     <header-component></header-component>

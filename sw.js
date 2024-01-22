@@ -5,9 +5,22 @@ const appStaticResources = [
     '/',
     '/index.html',
     '/css/style.css',
+    'https://fonts.gstatic.com',
+    'https://fonts.googleapis.com',
+    'https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap',
+    '/screens/',
+    '/components/',
+    '/helpers/',
+    '/utils.js',
     '/app.js',
-    '/manifest/manifest.json',
-    '/favicon/favicon.ico'
+    '/manifest/',
+    'https://cdn.jsdelivr.net/npm/chart.js',
+    'https://catfact.ninja/fact',
+    'https://www.boredapi.com/api/activity',
+    'https://uselessfacts.jsph.pl/api/v2/facts/random',
+    'https://geek-jokes.sameerkumar.website/api?format=json',
+    'https://v2.jokeapi.dev/joke/Dark?type=single',
+    'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY',
 ];
 
 self.addEventListener('install', (e) => {
