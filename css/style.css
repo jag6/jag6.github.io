@@ -160,6 +160,8 @@ footer p { line-height: 48px; color: #dbdee2; }
     background-color: #604BFA; color: #fff;
 }
 .previous-apod-container button:hover { cursor: pointer; opacity: .5; }
+.previous-apod { margin-bottom: 2rem; }
+.previous-apod:last-child { margin-bottom: 0; }
 
 
 @media only screen and (max-width: 1100px) {
