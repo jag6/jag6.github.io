@@ -3,6 +3,8 @@
 ## Description
 This is a simple little SPA that I made consisting of various APIs that provide anything from random facts about cats to a live tracker for Bitcoin. Since this app is an entirely static personal project, I am limited to the number of APIs available that are both free and don't require CORS.
 
+This app is a PWA (Progressive Web App) and, thus, can be installed on mobile and desktop in addition to being used in the browser. Due to the app's current dependency on third-party APIs, offline use has not been setup at this time.
+
 ## APIs
 - Random
     - Cat facts
