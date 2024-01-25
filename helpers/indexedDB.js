@@ -16,12 +16,6 @@ export const NASAIndexedDB = (url, title, date, explanation) => {
             title: title,
             url: url,
         });
-        insertAPOD(db, {
-            date: date,
-            explanation: explanation,
-            title: title,
-            url: url,
-        });
     };
     
     idbRequest.onupgradeneeded = (e) => {
@@ -67,6 +61,7 @@ export const getAllPreviousAPOD = () => {
         const txn = db.transaction('PreviousAPOD', 'readonly');
         const objectStore = txn.objectStore('PreviousAPOD');
         const index = objectStore.index('date');
+        // sort dates from most recent
         const cursorRequest = index.openCursor(null, 'prev');
     
         cursorRequest.onsuccess = (e) => {
