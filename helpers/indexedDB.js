@@ -27,10 +27,10 @@ export const NASAIndexedDB = (url, title, date, explanation) => {
             unique: true
         });
     };
-    const insertAPOD = (db, contact) => {
+    const insertAPOD = (db, apod) => {
         const txn = db.transaction('PreviousAPOD', 'readwrite');
         const store = txn.objectStore('PreviousAPOD');
-        let query = store.put(contact);
+        let query = store.put(apod);
 
         query.onsuccess = (e) => {
             console.log(e);
@@ -46,6 +46,8 @@ export const NASAIndexedDB = (url, title, date, explanation) => {
 }
 
 export const getAllPreviousAPOD = () => {
+    const previousApodsUl = document.querySelector('.previous-apods');
+
     const idbRequest = indexedDB.open('CRM', 1);
     idbRequest.onerror = (e) => {
         console.error(`Database error: ${e.target.errorCode}`);
@@ -58,13 +60,15 @@ export const getAllPreviousAPOD = () => {
     const previousAPOD = (db) => {
         const txn = db.transaction('PreviousAPOD', 'readonly');
         const objectStore = txn.objectStore('PreviousAPOD');
+        const index = objectStore.index('date');
     
-        objectStore.openCursor().onsuccess = (e) => {
+        index.openCursor().onsuccess = (e) => {
             let cursor = e.target.result;
             if(cursor) {
                 let apod = cursor.value;
                 createPreviousAPOD(apod);
                 cursor.continue();
+                previousApodsUl.querySelectorAll('li')[0].remove();
             }
             txn.oncomplete = () => {
                 db.close();
@@ -100,7 +104,6 @@ export const getAllPreviousAPOD = () => {
         li.appendChild(div);
         li.appendChild(section);
         // append all to previous apods
-        const previousAPOD = document.querySelector('.previous-apods');
-        previousAPOD.appendChild(li);
+        previousApodsUl.appendChild(li);
     }
 }
