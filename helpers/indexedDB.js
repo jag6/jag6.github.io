@@ -16,6 +16,12 @@ export const NASAIndexedDB = (url, title, date, explanation) => {
             title: title,
             url: url,
         });
+        insertAPOD(db, {
+            date: date,
+            explanation: explanation,
+            title: title,
+            url: url,
+        });
     };
     
     idbRequest.onupgradeneeded = (e) => {
@@ -61,16 +67,18 @@ export const getAllPreviousAPOD = () => {
         const txn = db.transaction('PreviousAPOD', 'readonly');
         const objectStore = txn.objectStore('PreviousAPOD');
         const index = objectStore.index('date');
+        const cursorRequest = index.openCursor(null, 'prev');
     
-        index.openCursor().onsuccess = (e) => {
+        cursorRequest.onsuccess = (e) => {
             let cursor = e.target.result;
             if(cursor) {
                 let apod = cursor.value;
                 createPreviousAPOD(apod);
                 cursor.continue();
-                previousApodsUl.querySelectorAll('li')[0].remove();
             }
             txn.oncomplete = () => {
+                // remove present apod from previous apods
+                previousApodsUl.querySelectorAll('li')[0].remove();
                 db.close();
             }
         }
