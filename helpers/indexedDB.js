@@ -46,7 +46,7 @@ export const NASAIndexedDB = (url, title, date, explanation) => {
 }
 
 export const getAllPreviousAPOD = () => {
-    const previousApodsUl = document.querySelector('.previous-apods');
+    const previousApodsUl = document.getElementById('previous-apods');
 
     const idbRequest = indexedDB.open('CRM', 1);
     idbRequest.onerror = (e) => {

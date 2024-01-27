@@ -48,6 +48,15 @@ const NASA = {
     after_render: () => {
         document.getElementById('previous-apod-btn').addEventListener('click', () => {
             getAllPreviousAPOD();
+            const previousApodsUl = document.getElementById('previous-apods');
+            if(previousApodsUl.querySelectorAll('li').length === 0) {
+                const section = document.createElement('section');
+                const h2 = document.createElement('h2');
+                h2.classList.add('ta-center');
+                h2.textContent = 'No Data Yet, Check Back Tomorrow';
+                section.appendChild(h2);
+                previousApodsUl.appendChild(section);
+            }
         });
     }
 }
