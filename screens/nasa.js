@@ -8,7 +8,7 @@ const NASA = {
         const url = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
         const apod = await fetchAPI(url);
 
-        // //save to IndexedDB
+        // save to IndexedDB
         const newDate = `${apod.date}`;
         const newTitle = `${apod.title}`;
         const newUrl = `${apod.url}`;
@@ -41,7 +41,7 @@ const NASA = {
                     <h1>PREVIOUS APODs</h1>
                     <div><button id="previous-apod-btn" class="previous-apod-btn" aria-label="Display Previous NASA APOD Button">CLICK HERE</button></div>
                 </section>
-                <ul class="previous-apods"></ul>
+                <ul id="previous-apods" class="previous-apods"></ul>
             </section>
         `;
     },
