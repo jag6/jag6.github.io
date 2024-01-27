@@ -74,6 +74,14 @@ export const getAllPreviousAPOD = () => {
             txn.oncomplete = () => {
                 // remove present apod from previous apods
                 previousApodsUl.querySelectorAll('li')[0].remove();
+                if(previousApodsUl.querySelectorAll('li').length === 0) {
+                    const section = document.createElement('section');
+                    const h2 = document.createElement('h2');
+                    h2.classList.add('ta-center');
+                    h2.textContent = 'No Data Yet, Check Back Tomorrow';
+                    section.appendChild(h2);
+                    previousApodsUl.appendChild(section);
+                }
                 db.close();
             }
         }
