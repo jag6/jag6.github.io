@@ -1,17 +1,18 @@
 import { fetchAPI } from "../helpers/fetch.js";
 import topHeader from "../components/topHeader.js";
-import { pageTitle } from "../utils.js";
+import { hideLoading, pageTitle, showLoading } from "../utils.js";
 import { getScriptures } from "../helpers/rsg.js";
 
 const Home = {
     render: async () => {
         pageTitle.textContent = '...Of the Day APP | Home';
+        showLoading();
         const catFact = await fetchAPI('https://catfact.ninja/fact');
         const boredFix = await fetchAPI('https://www.boredapi.com/api/activity');
         const uselessFact = await fetchAPI('https://uselessfacts.jsph.pl/api/v2/facts/random');
         const geekJoke = await fetchAPI('https://geek-jokes.sameerkumar.website/api?format=json');
         const darkJoke = await fetchAPI('https://v2.jokeapi.dev/joke/Dark?type=single');
-        
+        hideLoading();
         return `
             ${topHeader.render('Random Stuff')}
             <section class="random-stuff">

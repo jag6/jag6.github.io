@@ -106,6 +106,38 @@ footer p { line-height: 48px; color: #dbdee2; }
 .top-header { margin: 0 auto 2rem auto; }
 
 
+/*OVERLAY*/
+
+.overlay {
+    display: none; position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    margin-top: 0;
+}
+.overlay.active {
+    display: flex; justify-content: center; align-items: center;
+    color: #000;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+}
+.overlay-message {
+    background-color: #4234AD; color: #fff;
+    border-radius: 10px;
+    display: flex; flex-direction: column;
+    padding: 1rem 1%;
+    margin-top: 0;
+    min-width: 200px;
+}
+.overlay-message p { font-size: 20px; line-height: 32px; text-align: center; }
+.overlay-message div .overlay-close-btn { margin-top: 1rem; }
+.overlay-close-btn {
+    background-color: #604BFA; color: #fff; border-radius: 5px;
+    font-weight: 700; font-size: 18px; line-height: 32px;
+    width: 100%; text-align: center;
+}
+
+
 /*HOME*/
 
 .random-stuff ul:first-of-type { 
@@ -136,6 +168,9 @@ footer p { line-height: 48px; color: #dbdee2; }
     margin: 0; padding: 0; border-radius: 0;
 }
 
+@media only screen and (max-width: 576px) {
+    .random-stuff ul li { min-height: auto; }
+}
 
 /*APOD*/
 

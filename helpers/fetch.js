@@ -1,3 +1,5 @@
+import { showMessage } from "../utils.js";
+
 export const fetchAPI = async (url) => {
     try {
         const response = await fetch(url, {
@@ -14,6 +16,7 @@ export const fetchAPI = async (url) => {
         return json;
     } catch(error) {
         console.log(`${error}`);
+        showMessage(`${url} ${error}`);
     }
     return this.url;
 }
