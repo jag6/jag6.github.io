@@ -169,6 +169,7 @@ footer p { line-height: 48px; color: #dbdee2; }
 }
 
 @media only screen and (max-width: 576px) {
+    .overlay-message { padding: 1rem 3%; }
     .random-stuff ul li { min-height: auto; }
 }
 
