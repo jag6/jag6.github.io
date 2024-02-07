@@ -65,9 +65,11 @@ div:has(p) { margin-top: 1rem; }
 
 @media (prefers-color-scheme: dark) {
     body { background-color: #1e2028; color: #dbdee2; }
+    .language-practice-option a { color: #fff; }
 }
 @media (prefers-color-scheme: light) {
     body { background-color: #f5f5f5; color: #111; }
+    .language-practice-option a { color: #111; }
 }
 
 
@@ -221,18 +223,18 @@ footer p { line-height: 48px; color: #dbdee2; }
 .language-practice-option {
     width: 200px; 
     padding: 2rem 0;
-    display: flex; margin: 0 1rem 2rem 1rem; justify-content: center;
+    display: flex; margin: 0 auto 2rem auto; justify-content: center;
     background-color: #332885;
 }
 .language-practice-option:hover {
     cursor: pointer;
     transform: scale(1.05); transition: .5s ease-in-out;
 }
-.language-practice-option p {
+.language-practice-option a {
     font-size: 32px; line-height: 64px;
 }
 .language-practice-container {
-    display: none; flex-direction: column; justify-content: center; margin: 0 auto;
+    display: flex; flex-direction: column; justify-content: center; margin: 0 auto;
     width: 100%;
     max-width: 500px;
     padding: 0 1rem 1rem 1rem;
@@ -259,7 +261,7 @@ footer p { line-height: 48px; color: #dbdee2; }
 }
 
 .practice-definitions-container {
-    display: none;
+    display: flex;
 }
 
 /*CRYPTO*/

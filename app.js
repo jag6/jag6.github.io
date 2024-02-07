@@ -2,12 +2,16 @@ import Home from "./screens/home.js";
 import NASA from "./screens/nasa.js";
 import CryptoScreen from "./screens/crypto.js";
 import Error404 from "./screens/404.js";
-import LanguageLearning from "./screens/japanese.js";
+import LanguageLearning from "./screens/japanese/japanese.js";
+import Hiragana from "./screens/japanese/hiragana.js";
+import Definitions from "./screens/japanese/definitions.js";
 
 const routes = {
     '/': Home,
     '/nasa': NASA,
     '/language-learning': LanguageLearning,
+    '/hiragana': Hiragana,
+    '/definitions': Definitions,
     '/crypto': CryptoScreen
 }
 
