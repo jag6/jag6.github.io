@@ -40,8 +40,10 @@ h2 { font-size: 32px; line-height: 64px; }
 h3 { font-size: 24px; line-height: 48px; }
 h4 { font-size: 21px; line-height: 40px; }
 p { font-size: 16px; line-height: 32px;  word-wrap: break-word; }
+input { border-radius: 5px; padding: 0 1%;}
 small { font-size: 14px; line-height: 24px; }
 button { font-family: 'Noto Sans', sans-serif; }
+button:hover { cursor: pointer; opacity: .7; transition: .2s ease-in-out; }
 
 h1, h2 { font-weight: 700; }
 
@@ -207,6 +209,58 @@ footer p { line-height: 48px; color: #dbdee2; }
     .apod div:has(img, iframe) img, iframe { max-width: 1100px; }
 }
 
+
+/*LANGUAGE PRACTICE*/
+
+.language-practice-header { text-align: center; margin-bottom: 3rem; }
+.language-practice-options {
+    display: flex; flex-flow: row wrap;
+    max-width: 600px;
+    margin: 0 auto; justify-content: space-between; 
+}
+.language-practice-option {
+    width: 200px; 
+    padding: 2rem 0;
+    display: flex; margin: 0 1rem 2rem 1rem; justify-content: center;
+    background-color: #332885;
+}
+.language-practice-option:hover {
+    cursor: pointer;
+    transform: scale(1.05); transition: .5s ease-in-out;
+}
+.language-practice-option p {
+    font-size: 32px; line-height: 64px;
+}
+.language-practice-container {
+    display: none; flex-direction: column; justify-content: center; margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 1rem 1rem 1rem;
+    background-color: #332885;
+    border-radius: 10px;
+}
+.language-practice-container form { margin-top: 1rem; }
+.language-practice-container p {
+    font-size: 20px; line-height: 32px;
+}
+.language-practice-container label, input { font-size: 16px; line-height: 32px;}
+.language-practice-container div:first-child { 
+    display: flex; flex-direction: column;
+}
+.language-practice-container div:has(button) {
+    margin-top: 1rem;
+}
+.language-practice-container button {
+    border-radius: 5px;
+    padding: 0 1rem;
+    background-color: #604BFA; color: #fff;
+    width: 100%;
+    font-size: 16px; line-height: 32px;
+}
+
+.practice-definitions-container {
+    display: none;
+}
 
 /*CRYPTO*/
 
