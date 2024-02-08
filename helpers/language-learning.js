@@ -37,6 +37,7 @@ const showCommendation = (commendation) => {
 export const practiceHiragana = () => {
     const practiceForm = document.querySelectorAll('form')[0];
     const hiragana = document.getElementById('hiragana');
+    const randomWord =  document.getElementById('random-word');
 
     const checkHiragana = () => {
         document.getElementById('yes-no').textContent = "";
@@ -47,13 +48,13 @@ export const practiceHiragana = () => {
         let key = words[0][1];
         let value = words[0][2];
 
-        document.getElementById('random-word').textContent = key;
+        randomWord.textContent = key;
 
         const showCommendationAndTimeout = (commendation) => {
             showCommendation(commendation);
             setTimeout(() => {
                 checkHiragana();
-            }, 1000);
+            }, 1500);
         }
 
         practiceForm.addEventListener('submit', (e) => {
@@ -61,6 +62,7 @@ export const practiceHiragana = () => {
             if(hiragana.value === value) {
                 showCommendationAndTimeout(commendationWhenRight);
             }else {
+                randomWord.textContent = key + ' --- ' + value;
                 showCommendationAndTimeout(commendationWhenWrong);
             }
         });
