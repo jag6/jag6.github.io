@@ -25,15 +25,14 @@ const shuffle = (array) => {
     return array;
 };
 
-let commendationWhenRight = ['正しい！', 'はい、正解です！', '凄い！', '頭が良い！']; 
-let commendationWhenWrong = ['Close, but no cigar', 'Try again', 'Come on, this is easy'];
+let commendation = ['正しい！', 'はい、正解です！', '凄い！', '頭が良い！']; 
 
 const showCommendation = (commendation, key, value) => {   
     shuffle(commendation);
     if(key === value) {
         document.getElementById('yes-no').textContent = (commendation[0]);
     }else {
-        document.getElementById('yes-no').textContent = (commendation[0]) + ' --- ' + value;
+        document.getElementById('yes-no').textContent = ' --- ' + value;
     }
 }
 
@@ -44,7 +43,7 @@ export const practiceHiragana = () => {
     const randomWord =  document.getElementById('random-word');
 
     const checkHiragana = () => {
-        document.getElementById('yes-no').textContent = "";
+        document.getElementById('yes-no').textContent = '';
         practiceForm.reset();
         hiragana.focus();
 
@@ -64,9 +63,9 @@ export const practiceHiragana = () => {
         practiceForm.addEventListener('submit', (e) => {
             e.preventDefault();
             if(hiragana.value === value) {
-                showCommendationAndTimeout(commendationWhenRight);
+                showCommendationAndTimeout(commendation);
             }else {
-                showCommendationAndTimeout(commendationWhenWrong, hiragana, value);
+                showCommendationAndTimeout(commendation, hiragana, value);
             }
         });
     }
@@ -75,9 +74,49 @@ export const practiceHiragana = () => {
 
 
 // 定義の練習
-shuffle(words);
-for(let i = 0; i < 5; i++) {
-    let word = words[i];
-    console.log(word);
-}
-console.log(words)
+export const practiceDefinitions = () => {
+    const wordsUl = document.getElementById('words');
+    const definition = document.getElementById('definition');
+
+    const checkDefinition = () => {
+        wordsUl.innerHTML = '';
+        document.getElementById('yes-no').textContent = '';
+
+        shuffle(words);
+        let wordPool = [];
+        for(let i = 0; i < 6; i++) {
+            let word = words[i];
+            wordPool.push(word);
+            const li = document.createElement('li');
+            li.classList.add('word');
+            li.textContent = word[1];
+            li.setAttribute('definition', word[0]);
+            wordsUl.appendChild(li);
+        }
+
+        wordPool = shuffle(wordPool);
+        let wordDefinition = wordPool[0][0];
+        let wordKanji = wordPool[0][1];
+        definition.textContent = wordDefinition; 
+
+        const showCommendationAndTimeout = (commendation, wordKanji, wordDefinition) => {
+            showCommendation(commendation, wordKanji, wordDefinition);
+            setTimeout(() => {
+                checkDefinition();
+            }, 1500);
+        }
+
+        const wordsLi = document.querySelectorAll('.word');
+        wordsLi.forEach((word) => {
+            word.addEventListener('click', () => {
+                let value = word.getAttribute('definition');
+                if(wordDefinition === value) {
+                    showCommendationAndTimeout(commendation)
+                }else {
+                    showCommendationAndTimeout(commendation, wordDefinition, wordKanji);
+                }
+            });
+        });
+    }
+    checkDefinition();
+};
