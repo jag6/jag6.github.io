@@ -28,9 +28,13 @@ const shuffle = (array) => {
 let commendationWhenRight = ['正しい！', 'はい、正解です！', '凄い！', '頭が良い！']; 
 let commendationWhenWrong = ['Close, but no cigar', 'Try again', 'Come on, this is easy'];
 
-const showCommendation = (commendation) => {   
+const showCommendation = (commendation, key, value) => {   
     shuffle(commendation);
-    document.getElementById('yes-no').textContent = (commendation[0]);
+    if(key === value) {
+        document.getElementById('yes-no').textContent = (commendation[0]);
+    }else {
+        document.getElementById('yes-no').textContent = (commendation[0]) + ' --- ' + value;
+    }
 }
 
 // 平仮名の練習
@@ -50,8 +54,8 @@ export const practiceHiragana = () => {
 
         randomWord.textContent = key;
 
-        const showCommendationAndTimeout = (commendation) => {
-            showCommendation(commendation);
+        const showCommendationAndTimeout = (commendation, hiragana, value) => {
+            showCommendation(commendation, hiragana, value);
             setTimeout(() => {
                 checkHiragana();
             }, 1500);
@@ -62,8 +66,7 @@ export const practiceHiragana = () => {
             if(hiragana.value === value) {
                 showCommendationAndTimeout(commendationWhenRight);
             }else {
-                randomWord.textContent = key + ' --- ' + value;
-                showCommendationAndTimeout(commendationWhenWrong);
+                showCommendationAndTimeout(commendationWhenWrong, hiragana, value);
             }
         });
     }
