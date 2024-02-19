@@ -60,6 +60,7 @@ h1, h2 { font-weight: 700; }
 
 div:has(p) { margin-top: 1rem; }
 
+.disabled { opacity: .7; }
 
 /*DARK/LIGHT MODE*/
 

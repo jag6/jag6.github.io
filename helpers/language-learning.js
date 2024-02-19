@@ -42,13 +42,30 @@ const showCommendation = (commendation, key, value) => {
 
 // 平仮名の練習
 export const practiceHiragana = () => {
-    const practiceForm = document.querySelectorAll('form')[0];
-    const hiragana = document.getElementById('hiragana');
-    const randomWord =  document.getElementById('random-word');
+    const renderForm = () => {
+        const practiceContainer = document.getElementById('practice-hiragana-container');
+        practiceContainer.innerHTML = ''
+        practiceContainer.innerHTML = `
+            <div>
+                <p id="random-word"></p>
+                <p id="yes-no"></p>    
+            </div>
+            <form>
+                <div>
+                    <label for="hiragana">平仮名</label>
+                    <input type="text" name="hiragana" id="hiragana" required autofocus>
+                </div>
+                <div>
+                    <button id="hiragana-practice-form-btn" type="submit" aria-label="Check Hiragana Button">SUBMIT</button>
+                </div>
+            </form>
+        `;
+    };
 
     const checkHiragana = () => {
-        document.getElementById('yes-no').textContent = '';
-        practiceForm.reset();
+        renderForm();
+        const hiragana = document.getElementById('hiragana');
+        const randomWord =  document.getElementById('random-word');
         hiragana.focus();
 
         words = shuffle(words);
@@ -59,12 +76,15 @@ export const practiceHiragana = () => {
 
         const showCommendationAndTimeout = (commendation, hiragana, value) => {
             showCommendation(commendation, hiragana, value);
+            practiceFormBtn.setAttribute('disabled', '');
+            practiceFormBtn.classList.add('disabled');
             setTimeout(() => {
                 checkHiragana();
             }, 1500);
         }
 
-        practiceForm.addEventListener('submit', (e) => {
+        const practiceFormBtn = document.getElementById('hiragana-practice-form-btn');
+        practiceFormBtn.addEventListener('click', (e) => {
             e.preventDefault();
             if(hiragana.value === value) {
                 showCommendationAndTimeout(commendation);
@@ -72,7 +92,7 @@ export const practiceHiragana = () => {
                 showCommendationAndTimeout(commendation, hiragana, value);
             }
         });
-    }
+    };
     checkHiragana();
 };
 
@@ -121,6 +141,6 @@ export const practiceDefinitions = () => {
                 }
             });
         });
-    }
+    };
     checkDefinition();
 };
