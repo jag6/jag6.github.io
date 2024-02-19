@@ -31,7 +31,6 @@ const NASA = {
                             <h1>${apod.title}</h1>
                             <small>${apod.date}</small>
                             <div><p>${apod.explanation}</p></div>
-                            <a href="${apod.url}">Watch HERE</a>
                         </section>
                     `
                 }

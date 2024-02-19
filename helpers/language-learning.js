@@ -7,12 +7,17 @@ let words = [
     ['sad', '悲しい', 'かなしい'],
     ['celebration', 'お祝', 'おいわい'],
     ['tornado', '竜巻', 'たつまき'],
-    ['cloudy', '曇り', 'くもり']
+    ['cloudy', '曇り', 'くもり'],
+    ['tears', '涙', 'なみだ'],
+    ['stay up late', '夜更かしする', 'よふかしする'],
+    ['oversleep', '寝坊する', 'ねぼうする'],
+    ['stay up all night', '徹夜する', 'てつやする'],
+    ['lazy', 'だらしない', 'だらしない'],
+    ['ceiling', '天井', 'てんじょう']
 ];
 
 const shuffle = (array) => {
     let currentIndex = array.length;
-
     while(currentIndex != 0){
         let randomIndex = Math.floor(Math.random() * array.length);
         currentIndex -=1;
@@ -21,7 +26,6 @@ const shuffle = (array) => {
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temp;
     }
-    
     return array;
 };
 
