@@ -94,10 +94,16 @@ export const getAllPreviousAPOD = () => {
         li.classList.add('apod');
         // create div and image
         let div = document.createElement('div');
-        let img = document.createElement('img');
-        img.src = apod.url;
-        img.alt = apod.title;
-        div.appendChild(img);
+        if(apod.url.includes('youtube')) {
+            let iFrame = document.createElement('iframe');
+            iFrame.src = apod.url;
+            div.appendChild(iFrame);
+        }else {
+            let img = document.createElement('img');
+            img.src = apod.url;
+            img.alt = apod.title;
+            div.appendChild(img);
+        }
         // create section for text
         let section = document.createElement('section');
         let h2 = document.createElement('h2');
