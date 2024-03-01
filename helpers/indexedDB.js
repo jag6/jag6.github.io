@@ -92,7 +92,7 @@ export const getAllPreviousAPOD = () => {
         let li = document.createElement('li');
         li.classList.add('previous-apod');
         li.classList.add('apod');
-        // create div and image
+        // create div and image or iframe
         let div = document.createElement('div');
         if(apod.url.includes('youtube')) {
             let iFrame = document.createElement('iframe');
