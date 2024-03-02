@@ -1,3 +1,5 @@
+import { showMessage } from "../utils.js";
+
 let words = [
     ['prevent', '防ぐ', 'ふせぐ'],
     ['maintain', '保つ', 'たもつ'],
@@ -29,6 +31,8 @@ let words = [
     ['rare', '珍しい', 'めずらしい'],
     ['pretend', 'ふりをする', 'ふりをする'],
     ['be born', '産(生)まれる', 'うまれる'],
+    ['be worth doing', 'やりがいを感じる', 'やりがいをかんじる'],
+    ['lose', '失う', 'うしなう'],
 ];
 
 const shuffle = (array) => {
@@ -59,7 +63,7 @@ const showCommendation = (commendation, key, value) => {
 export const practiceHiragana = () => {
     const renderForm = () => {
         const practiceContainer = document.getElementById('practice-hiragana-container');
-        practiceContainer.innerHTML = ''
+        practiceContainer.innerHTML = '';
         practiceContainer.innerHTML = `
             <div>
                 <p id="random-word"></p>
@@ -121,6 +125,12 @@ export const practiceDefinitions = () => {
         wordsUl.innerHTML = '';
         document.getElementById('yes-no').textContent = '';
 
+        if(words.length < 6) {
+            const errorMessage = 'Not enough vocab words.\nAdd more to play the game.';
+            showMessage(errorMessage);
+            console.log(errorMessage);
+            return;
+        }
         shuffle(words);
         let wordPool = [];
         for(let i = 0; i < 6; i++) {

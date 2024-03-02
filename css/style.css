@@ -280,10 +280,11 @@ footer p { line-height: 48px; color: #dbdee2; }
 .words li {
     list-style: none;
     display: flex; flex-direction: column; justify-content: center;
-    min-width: 144px; height: 144px;
+    width: 144px; height: 144px;
     background-color: #332885;
     border-radius: 20px;
     margin: 2rem; 
+    padding: 0 .5rem;
     font-size: 24px; line-height: 48px; 
     text-align: center;
 }
@@ -303,8 +304,12 @@ footer p { line-height: 48px; color: #dbdee2; }
 
 @media only screen and (max-width: 700px) {
     .practice-definitions-container { flex-direction: column-reverse; }
+    .definition-container { height: 6rem; }
+    .words li { width: 100px; height: 100px; margin: 1rem; font-size: 16px; line-height: 24px; }
+} 
+@media only screen and (max-width: 576px) {
     .words { justify-content: center; }
-}
+} 
 
 /*CRYPTO*/
 
