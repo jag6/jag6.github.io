@@ -8,21 +8,7 @@ const Hiragana = {
             <section id="language-practice-header" class="language-practice-header">
                 <h1>平仮名の練習❕</h1>
             </section>
-            <div id="practice-hiragana-container" class="language-practice-container practice-hiragana-container">
-                <div>
-                    <p id="random-word"></p>
-                    <p id="yes-no"></p>    
-                </div>
-                <form>
-                    <div>
-                        <label for="hiragana">平仮名</label>
-                        <input type="text" name="hiragana" id="hiragana" required autofocus>
-                    </div>
-                    <div>
-                        <button id="hiragana-practice-form-btn" type="submit" aria-label="Check Hiragana Button">SUBMIT</button>
-                    </div>
-                </form>
-            </div>
+            <div id="practice-hiragana-container" class="language-practice-container practice-hiragana-container"></div>
         `;
     },
     after_render: () => {

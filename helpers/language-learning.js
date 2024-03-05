@@ -33,6 +33,21 @@ let words = [
     ['be born', '産(生)まれる', 'うまれる'],
     ['be worth doing', 'やりがいを感じる', 'やりがいをかんじる'],
     ['lose', '失う', 'うしなう'],
+    ['misunderstand', '勘違いする', 'かんちがいする'],
+    ['get dirty', '汚れる', 'よごれる'],
+    ['wrap, cover/engulf', '包む', 'つつむ'],
+    ['desired, missed/nostalgic', '懐かしい', 'なつかしい'],
+    ['catch(fish)', '釣る', 'つる'],
+    ['shoulder', '肩', 'かた'],
+    ['sunset', '夕焼け', 'ゆうやけ'],
+    ['overlap, pile up', '重なる', 'かさなる'],
+    ['turn away, chase off', '追い返す', 'おいかえす'],
+    ['strike, knock, beat(drum)', '叩く', 'たたく'],
+    ['complain, appeal, resort to', '訴える', 'うったえる'],
+    ['impel, drive', '切っ掛けに', 'きっかけに'],
+    ['insult, bad mouth', '悪口を言う', 'わるぐちをいう'],
+    ['stock price', '株価', 'かぶか'],
+    ['stock market', '株式市場', 'かぶしきしじょう'],
 ];
 
 const shuffle = (array) => {
@@ -82,6 +97,13 @@ export const practiceHiragana = () => {
     };
 
     const checkHiragana = () => {
+        if(words.length === 0) {
+            const errorMessage = 'No vocab words.\nAdd some to play the game.';
+            showMessage(errorMessage);
+            console.log(errorMessage);
+            return;
+        }
+
         renderForm();
         const hiragana = document.getElementById('hiragana');
         const randomWord =  document.getElementById('random-word');
@@ -90,7 +112,6 @@ export const practiceHiragana = () => {
         words = shuffle(words);
         let key = words[0][1];
         let value = words[0][2];
-
         randomWord.textContent = key;
 
         const showCommendationAndTimeout = (commendation, hiragana, value) => {
@@ -122,15 +143,16 @@ export const practiceDefinitions = () => {
     const definition = document.getElementById('definition');
 
     const checkDefinition = () => {
-        wordsUl.innerHTML = '';
-        document.getElementById('yes-no').textContent = '';
-
         if(words.length < 6) {
             const errorMessage = 'Not enough vocab words.\nAdd more to play the game.';
             showMessage(errorMessage);
             console.log(errorMessage);
             return;
         }
+        
+        wordsUl.innerHTML = '';
+        document.getElementById('yes-no').textContent = '';
+
         shuffle(words);
         let wordPool = [];
         for(let i = 0; i < 6; i++) {
