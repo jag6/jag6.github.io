@@ -1,13 +1,16 @@
 import { showMessage } from "../utils.js";
 
-let words = [
-    ['prevent', '防ぐ', 'ふせぐ'],
+let learnedWords = [
     ['maintain', '保つ', 'たもつ'],
     ['praise', '褒める', 'ほめる'],
     ['advise', '勧める', 'すすめる'],
     ['admit', '認める', 'みとめる'],
     ['sad', '悲しい', 'かなしい'],
     ['celebration', 'お祝', 'おいわい'],
+]
+
+let words = [
+    ['prevent', '防ぐ', 'ふせぐ'],
     ['tornado', '竜巻', 'たつまき'],
     ['cloudy', '曇り', 'くもり'],
     ['tears', '涙', 'なみだ'],
@@ -54,7 +57,7 @@ let words = [
     ['lose, get rid of', '無くす', 'なくす'],
     ['get sick/intoxicated', '酔う', 'よう'],
     ['tell a secret/leak info', 'ばらす', 'ばらす'],
-    ['complain', '文句を言', 'もんくをいう)'],
+    ['complain', '文句を言', 'もんくをいう'],
     ['hide (oneself)', '隠れる', 'かくれる'],
     ['electric fan', '扇風機', 'せんぷうき'],
     ['lottery', '宝くじ', 'たからくじ'],
