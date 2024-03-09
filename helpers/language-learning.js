@@ -48,6 +48,17 @@ let words = [
     ['insult, bad mouth', '悪口を言う', 'わるぐちをいう'],
     ['stock price', '株価', 'かぶか'],
     ['stock market', '株式市場', 'かぶしきしじょう'],
+    ['noise', '騒音', 'そうおん'],
+    ['hiding place, refuge', '隠れ家', 'かくれが'],
+    ['hold(arms), have(problems)', '抱える', 'かかえる'],
+    ['lose, get rid of', '無くす', 'なくす'],
+    ['get sick/intoxicated', '酔う', 'よう'],
+    ['tell a secret/leak info', 'ばらす', 'ばらす'],
+    ['complain', '文句を言', 'もんくをいう)'],
+    ['hide (oneself)', '隠れる', 'かくれる'],
+    ['electric fan', '扇風機', 'せんぷうき'],
+    ['lottery', '宝くじ', 'たからくじ'],
+    ['bustling, lively', '賑やか', 'にぎやか'],
 ];
 
 const shuffle = (array) => {
