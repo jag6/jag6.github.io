@@ -62,6 +62,18 @@ let words = [
     ['electric fan', '扇風機', 'せんぷうき'],
     ['lottery', '宝くじ', 'たからくじ'],
     ['bustling, lively', '賑やか', 'にぎやか'],
+    ['ratio, percentage', '割合', 'わりあい'],
+    ['calm down', '落ち着く', 'おちつく'],
+    ['melt', '溶ける', 'とける'],
+    ['missing(person)', '行方不明', 'ゆくえふめい'],
+    ['sled', 'そり', 'そり'],
+    ['pet owner', '飼い主', 'かいぬし'],
+    ['hug', '抱く', 'だく'],
+    ['protagonist', '主人公', 'しゅじんこう'],
+    ['dig', '掘る', 'ほる'],
+    ['fold, close(shop)', '畳む', 'たたむ'],
+    ['pillar', '柱', 'はしら'],
+    ['wave one\'s hands', '手を振る', 'てをふる'],
 ];
 
 const shuffle = (array) => {
