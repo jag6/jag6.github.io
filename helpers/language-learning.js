@@ -74,6 +74,17 @@ let words = [
     ['fold, close(shop)', '畳む', 'たたむ'],
     ['pillar', '柱', 'はしら'],
     ['wave one\'s hands', '手を振る', 'てをふる'],
+    ['稻田', '田んぼ', 'たんぼ'],
+    ['田地', '畑', 'はたけ'],
+    ['collapse, break down', '崩れる', 'くずれる'],
+    ['swell, get excited', '盛り上がる', 'もりあがる'],
+    ['seed', '種', 'たね'],
+    ['intense', '激しい', 'はげしい'],
+    ['rob', '奪う', 'うばう'],
+    ['driver', '運転手', 'うんてんしゅ'],
+    ['spread, layout', '敷く', 'しく'],
+    ['appear, express', '表す', 'あらわす'],
+    ['count', '数える', 'かぞえる'],
 ];
 
 const shuffle = (array) => {
