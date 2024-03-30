@@ -85,6 +85,16 @@ let words = [
     ['spread, layout', '敷く', 'しく'],
     ['appear, express', '表す', 'あらわす'],
     ['count', '数える', 'かぞえる'],
+    ['soft, tender', '柔らかい', 'やわらかい'],
+    ['fine, minute', '細かい', 'こまかい'],
+    ['raise, develop', '育てる', 'そだてる'],
+    ['entrust, deposit', '預ける', 'あずける'],
+    ['depart, split up', '別れる', 'わかれる'],
+    ['fire a gun', '銃を撃つ', 'じゅうをうつ'],
+    ['suspect', '容疑者', 'ようぎしゃ'],
+    ['lid, cap', '蓋', 'ふた'],
+    ['fall down', '転ぶ', 'ころぶ'],
+    ['bump', 'ぶつかる', 'ぶつかる'],
 ];
 
 const shuffle = (array) => {
