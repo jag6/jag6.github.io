@@ -246,11 +246,11 @@ export const practiceJapanese = () => {
 }
 
 // 定義の練習
-export const practiceDefinitions = () => {
+export const practiceWords = () => {
     const wordsUl = document.getElementById('words');
-    const definition = document.getElementById('definition');
+    const chosenWord = document.getElementById('chosen-word');
 
-    const checkDefinition = () => {
+    const checkWord = () => {
         if(words.length < 6) {
             const errorMessage = 'Not enough vocab words.\nAdd more to play the game.';
             showMessage(errorMessage);
@@ -298,7 +298,7 @@ export const practiceDefinitions = () => {
             const p = document.createElement('p');
             const ruby = document.createElement('ruby');
             p.textContent = word[1];
-            p.setAttribute('definition', word[0]);
+            p.setAttribute('chosen-word', word[0]);
             if(!furigana || furigana == '') {
                 if(word[1] === word[2]) {
                     ruby.textContent = '';
@@ -316,19 +316,19 @@ export const practiceDefinitions = () => {
         wordPool = shuffle(wordPool);
         let wordDefinition = wordPool[0][0];
         let wordKanji = wordPool[0][1];
-        definition.textContent = wordDefinition; 
+        chosenWord.textContent = wordDefinition; 
 
         const showCommendationAndTimeout = (commendation, wordKanji, wordDefinition) => {
             showCommendation(commendation, wordKanji, wordDefinition);
             setTimeout(() => {
-                checkDefinition();
+                checkWord();
             }, 1500);
         }
         const wordsLi = document.querySelectorAll('.word');
         wordsLi.forEach((word) => {
             word.addEventListener('click', () => {
                 const def = word.querySelector('p');
-                let value = def.getAttribute('definition');
+                let value = def.getAttribute('chosen-word');
                 if(wordDefinition === value) {
                     showCommendationAndTimeout(commendation)
                 }else {
@@ -337,5 +337,5 @@ export const practiceDefinitions = () => {
             });
         });
     };
-    checkDefinition();
+    checkWord();
 };

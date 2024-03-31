@@ -5,7 +5,7 @@ import Error404 from "./screens/404.js";
 import LanguageLearning from "./screens/language-learning/index.js";
 import Hiragana from "./screens/language-learning/hiragana.js";
 import Japanese from "./screens/language-learning/japanese.js";
-import Definitions from "./screens/language-learning/definitions.js";
+import Words from "./screens/language-learning/words.js";
 
 const routes = {
     '/': Home,
@@ -13,7 +13,7 @@ const routes = {
     '/language-learning': LanguageLearning,
     '/hiragana': Hiragana,
     '/japanese': Japanese,
-    '/definitions': Definitions,
+    '/words': Words,
     '/crypto': CryptoScreen
 }
 

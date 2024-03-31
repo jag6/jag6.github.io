@@ -16,8 +16,8 @@ const LanguageLearning = {
                         <div id="practice-japanese" class="language-practice-option">
                             <p href="#/japanese">日本語</a>          
                         </div>
-                        <div id="practice-definitions" class="language-practice-option">
-                            <p href="#/definitions">定義を選ぶ</p>          
+                        <div id="practice-words" class="language-practice-option">
+                            <p href="#/words">単語</p>          
                         </div>
                     </div>
                 </div>
@@ -30,8 +30,8 @@ const LanguageLearning = {
         document.getElementById('practice-japanese').addEventListener('click', () => {
             location.hash = '/japanese';
         });
-        document.getElementById('practice-definitions').addEventListener('click', () => {
-            location.hash = '/definitions';
+        document.getElementById('practice-words').addEventListener('click', () => {
+            location.hash = '/words';
         });
     }
 }
