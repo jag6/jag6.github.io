@@ -7,94 +7,95 @@ let learnedWords = [
     ['admit', '認める', 'みとめる'],
     ['sad', '悲しい', 'かなしい'],
     ['celebration', 'お祝', 'おいわい'],
+    ['stay up all night', '徹夜する', 'てつやする', 'てつや'],
+    ['ceiling', '天井', 'てんじょう'],
+    ['roof', '屋根', 'やね'],
+    ['shallow', '浅い', 'あさい', 'あさ'],
+    ['save', '貯める', 'ためる', 'た'],
 ]
 
 let words = [
-    ['prevent', '防ぐ', 'ふせぐ'],
+    ['prevent', '防ぐ', 'ふせぐ', 'ふせ'],
     ['tornado', '竜巻', 'たつまき'],
-    ['cloudy', '曇り', 'くもり'],
+    ['cloudy', '曇り', 'くもり', 'くも'],
     ['tears', '涙', 'なみだ'],
-    ['stay up late', '夜更かしする', 'よふかしする'],
-    ['oversleep', '寝坊する', 'ねぼうする'],
-    ['stay up all night', '徹夜する', 'てつやする'],
+    ['stay up late', '夜更かしする', 'よふかしする', 'よふ'],
+    ['oversleep', '寝坊する', 'ねぼうする', 'ねぼう'],
     ['lazy', 'だらしない', 'だらしない'],
-    ['ceiling', '天井', 'てんじょう'],
     ['fog', '霧', 'きり'],
     ['harbor', '港', 'みなと'],
     ['lake', '湖', 'みずうみ'],
-    ['tidy up', '片付ける', 'かづける'],
-    ['catch', '捕まえる', 'つかまえる'],
-    ['shallow', '浅い', 'あさい'],
+    ['tidy up', '片付ける', 'かづける', 'かづ'],
+    ['catch', '捕まえる', 'つかまえる', 'つか'],
     ['shore', '岸', 'きし'],
-    ['roof', '屋根', 'やね'],
     ['hill, slope', '坂', 'さか'],
-    ['dead end', '行き止まり', 'いきどまり'],
-    ['muggy', '蒸し暑い', 'むしあつい'],
-    ['save', '貯める', 'ためる'],
-    ['rare', '珍しい', 'めずらしい'],
+    ['dead end', '行き止まり', 'いきどまり', 'い ど'],
+    ['muggy', '蒸し暑い', 'むしあつい', 'む あつ'],
+    ['rare', '珍しい', 'めずらしい', 'めず'],
     ['pretend', 'ふりをする', 'ふりをする'],
-    ['be born', '産(生)まれる', 'うまれる'],
-    ['be worth doing', 'やりがいを感じる', 'やりがいをかんじる'],
-    ['lose', '失う', 'うしなう'],
-    ['misunderstand', '勘違いする', 'かんちがいする'],
-    ['get dirty', '汚れる', 'よごれる'],
-    ['wrap, cover/engulf', '包む', 'つつむ'],
-    ['desired, missed/nostalgic', '懐かしい', 'なつかしい'],
-    ['catch(fish)', '釣る', 'つる'],
+    ['be born', '産(生)まれる', 'うまれる', 'う'],
+    ['be worth doing', 'やりがいを感じる', 'やりがいをかんじる', ' かん'],
+    ['lose', '失う', 'うしなう', 'うし'],
+    ['misunderstand', '勘違いする', 'かんちがいする', 'かんちが'],
+    ['get dirty', '汚れる', 'よごれる', 'よご'],
+    ['wrap, cover/engulf', '包む', 'つつむ', 'つつ'],
+    ['desired, missed/nostalgic', '懐かしい', 'なつかしい', 'なつ'],
+    ['catch(fish)', '釣る', 'つる', 'つ'],
     ['shoulder', '肩', 'かた'],
-    ['sunset', '夕焼け', 'ゆうやけ'],
-    ['overlap, pile up', '重なる', 'かさなる'],
-    ['turn away, chase off', '追い返す', 'おいかえす'],
-    ['strike, knock, beat(drum)', '叩く', 'たたく'],
-    ['complain, appeal, resort to', '訴える', 'うったえる'],
+    ['sunset', '夕焼け', 'ゆうやけ', 'ゆうや'],
+    ['overlap, pile up', '重なる', 'かさなる', 'かさ'],
+    ['turn away, chase off', '追い返す', 'おいかえす', 'お かえ'],
+    ['strike, knock, beat(drum)', '叩く', 'たたく', 'たた'],
+    ['complain, appeal, resort to', '訴える', 'うったえる', 'うった'],
     ['impel, drive', '切っ掛けに', 'きっかけに'],
-    ['insult, bad mouth', '悪口を言う', 'わるぐちをいう'],
+    ['insult, bad mouth', '悪口を言う', 'わるぐちをいう', 'わるぐち い'],
     ['stock price', '株価', 'かぶか'],
     ['stock market', '株式市場', 'かぶしきしじょう'],
     ['noise', '騒音', 'そうおん'],
-    ['hiding place, refuge', '隠れ家', 'かくれが'],
-    ['hold(arms), have(problems)', '抱える', 'かかえる'],
-    ['lose, get rid of', '無くす', 'なくす'],
-    ['get sick/intoxicated', '酔う', 'よう'],
+    ['hiding place, refuge', '隠れ家', 'かくれが', 'かく が'],
+    ['hold(arms), have(problems)', '抱える', 'かかえる', 'かか'],
+    ['lose, get rid of', '無くす', 'なくす', 'な'],
+    ['get sick/intoxicated', '酔う', 'よう', 'よ'],
     ['tell a secret/leak info', 'ばらす', 'ばらす'],
-    ['complain', '文句を言', 'もんくをいう'],
-    ['hide (oneself)', '隠れる', 'かくれる'],
+    ['complain', '文句を言う', 'もんくをいう', 'もんく い'],
+    ['hide (oneself)', '隠れる', 'かくれる', 'かく'],
     ['electric fan', '扇風機', 'せんぷうき'],
-    ['lottery', '宝くじ', 'たからくじ'],
-    ['bustling, lively', '賑やか', 'にぎやか'],
+    ['lottery', '宝くじ', 'たからくじ', 'たから'],
+    ['bustling, lively', '賑やか', 'にぎやか', 'にぎ'],
     ['ratio, percentage', '割合', 'わりあい'],
-    ['calm down', '落ち着く', 'おちつく'],
-    ['melt', '溶ける', 'とける'],
+    ['calm down', '落ち着く', 'おちつく', 'お つ'],
+    ['melt', '溶ける', 'とける', 'と'],
     ['missing(person)', '行方不明', 'ゆくえふめい'],
     ['sled', 'そり', 'そり'],
-    ['pet owner', '飼い主', 'かいぬし'],
-    ['hug', '抱く', 'だく'],
+    ['pet owner', '飼い主', 'かいぬし', 'か ぬし'],
+    ['hug', '抱く', 'だく', 'だ'],
     ['protagonist', '主人公', 'しゅじんこう'],
-    ['dig', '掘る', 'ほる'],
-    ['fold, close(shop)', '畳む', 'たたむ'],
+    ['dig', '掘る', 'ほる', 'ほ'],
+    ['fold, close(shop)', '畳む', 'たたむ', 'たた'],
     ['pillar', '柱', 'はしら'],
-    ['wave one\'s hands', '手を振る', 'てをふる'],
-    ['稻田', '田んぼ', 'たんぼ'],
+    ['wave one\'s hands', '手を振る', 'てをふる', 'て ふ'],
+    ['稻田', '田んぼ', 'たんぼ', 'た'],
     ['田地', '畑', 'はたけ'],
-    ['collapse, break down', '崩れる', 'くずれる'],
-    ['swell, get excited', '盛り上がる', 'もりあがる'],
+    ['collapse, break down', '崩れる', 'くずれる', 'くず'],
+    ['swell, get excited', '盛り上がる', 'もりあがる', 'も あ'],
     ['seed', '種', 'たね'],
-    ['intense', '激しい', 'はげしい'],
-    ['rob', '奪う', 'うばう'],
+    ['intense', '激しい', 'はげしい', 'はげ'],
+    ['rob', '奪う', 'うばう', 'うば'],
     ['driver', '運転手', 'うんてんしゅ'],
-    ['spread, layout', '敷く', 'しく'],
-    ['appear, express', '表す', 'あらわす'],
-    ['count', '数える', 'かぞえる'],
-    ['soft, tender', '柔らかい', 'やわらかい'],
-    ['fine, minute', '細かい', 'こまかい'],
-    ['raise, develop', '育てる', 'そだてる'],
-    ['entrust, deposit', '預ける', 'あずける'],
-    ['depart, split up', '別れる', 'わかれる'],
-    ['fire a gun', '銃を撃つ', 'じゅうをうつ'],
+    ['spread, layout', '敷く', 'しく', 'し'],
+    ['appear, express', '表す', 'あらわす', 'あらわ'],
+    ['count', '数える', 'かぞえる', 'かぞ'],
+    ['soft, tender', '柔らかい', 'やわらかい', 'やわ'],
+    ['fine, minute', '細かい', 'こまかい', 'こま'],
+    ['raise, develop', '育てる', 'そだてる', 'そだ'],
+    ['entrust, deposit', '預ける', 'あずける', 'あず'],
+    ['depart, split up', '別れる', 'わかれる', 'わか'],
+    ['fire a gun', '銃を撃つ', 'じゅうをうつ', 'じゅう う'],
     ['suspect', '容疑者', 'ようぎしゃ'],
     ['lid, cap', '蓋', 'ふた'],
-    ['fall down', '転ぶ', 'ころぶ'],
+    ['fall down', '転ぶ', 'ころぶ', 'ころ'],
     ['bump', 'ぶつかる', 'ぶつかる'],
+    ['apologize', '謝る', 'あやまる', 'あやま'],
 ];
 
 const shuffle = (array) => {
@@ -200,6 +201,33 @@ export const practiceDefinitions = () => {
         wordsUl.innerHTML = '';
         document.getElementById('yes-no').textContent = '';
 
+        // toggle furigana and get/set cookie
+        const getCookie = (name) => {
+            let cookieArr = document.cookie.split(';');
+            for (let i = 0; i < cookieArr.length; i++) {
+                let cookiePair = cookieArr[i].split('=');
+                if(name == cookiePair[0].trim()) {
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            return null;
+        };
+        let furigana = JSON.parse(getCookie('furigana'));
+        const toggleRuby = document.getElementById('toggle-ruby');
+        toggleRuby.addEventListener('click', () => {
+            if(!furigana || furigana == '') {
+                document.cookie = 'furigana=' + JSON.stringify('clicked') + ';domain=;path=/;secure;http-only;samesite=lax;';
+            }else {
+                document.cookie = 'furigana=' + JSON.stringify('') + ';domain=;path=/;secure;http-only;samesite=lax;';
+            }
+            const ruby = document.querySelectorAll('ruby');
+            ruby.forEach((r) => {
+                r.classList.toggle('clicked');
+                window.location.reload();
+            });
+        });
+
+        // display words and check definition
         shuffle(words);
         let wordPool = [];
         for(let i = 0; i < 6; i++) {
@@ -207,8 +235,21 @@ export const practiceDefinitions = () => {
             wordPool.push(word);
             const li = document.createElement('li');
             li.classList.add('word');
-            li.textContent = word[1];
-            li.setAttribute('definition', word[0]);
+            const p = document.createElement('p');
+            const ruby = document.createElement('ruby');
+            p.textContent = word[1];
+            p.setAttribute('definition', word[0]);
+            if(!furigana || furigana == '') {
+                if(word[1] === word[2]) {
+                    ruby.textContent = '';
+                }else if(!word[3]) {
+                    ruby.textContent = word[2];      
+                }else {
+                    ruby.textContent = word[3];
+                }
+            }
+            li.appendChild(ruby);
+            li.appendChild(p);
             wordsUl.appendChild(li);
         }
 
@@ -223,11 +264,11 @@ export const practiceDefinitions = () => {
                 checkDefinition();
             }, 1500);
         }
-
         const wordsLi = document.querySelectorAll('.word');
         wordsLi.forEach((word) => {
             word.addEventListener('click', () => {
-                let value = word.getAttribute('definition');
+                const def = word.querySelector('p');
+                let value = def.getAttribute('definition');
                 if(wordDefinition === value) {
                     showCommendationAndTimeout(commendation)
                 }else {

@@ -61,6 +61,7 @@ h1, h2 { font-weight: 700; }
 div:has(p) { margin-top: 1rem; }
 
 .disabled { opacity: .7; }
+.clicked { display: none; }
 
 /*DARK/LIGHT MODE*/
 
@@ -213,7 +214,21 @@ footer p { line-height: 48px; color: #dbdee2; }
 
 /*LANGUAGE PRACTICE*/
 
-.language-practice-header { text-align: center; margin-bottom: 3rem; }
+.language-practice-header { text-align: center; margin-bottom: 3rem; position: relative; }
+.toggle-ruby { 
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    top: 6rem;
+    left: 50%;
+    width: 200px;
+    margin: 0 auto; justify-content: center; display: flex;
+}
+.toggle-ruby button { 
+    font-size: 14px; line-height: 24px; 
+    font-family: 'Noto Sans', sans-serif;  
+    border-radius: 10px;
+    padding: .25rem 1rem;
+}
 .back-to-learning-menu {
     font-size: 20px; line-height: 32px;
     margin-left: 5%;
@@ -285,12 +300,13 @@ footer p { line-height: 48px; color: #dbdee2; }
     border-radius: 20px;
     margin: 2rem; 
     padding: 0 .5rem;
-    font-size: 24px; line-height: 48px; 
     text-align: center;
 }
+.words ruby { font-size: 12px; line-height: 16px; }
+.words p { font-size: 20px; line-height: 32px; }
 .words li:hover {
     cursor: pointer;
-    transform: scale(1.05); transition: .5s ease-in-out;
+    opacity: .7; transition: .1s ease-in-out;
 }
 .definition-container {
     display: flex; flex-direction: column;
