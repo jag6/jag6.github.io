@@ -24,5 +24,8 @@ This app is a PWA (Progressive Web App) and, thus, can be installed on mobile an
 - Japanese eLearning
     - Definition Practice
         - select the word out of a list of 6 that matches the definition
+        - toggle hiragana on/off above the kanji
     - Hiragana Practice
+        - type the correct hiragana for each given word
+    - Japanese Practice
         - type the correct hiragana for each given word
