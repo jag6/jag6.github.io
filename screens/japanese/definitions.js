@@ -6,7 +6,7 @@ const Definitions = {
         pageTitle.textContent = '日本語の練習';
         return `
             <section id="language-practice-header" class="language-practice-header">
-                <h1>定義の練習❕</h1>
+                <h1>定義を選ぶ❕</h1>
                 <section id="toggle-ruby" class="toggle-ruby"><button aria-label="Toggle Ruby Button" type="button">TOGGLE 振り仮名</button></section>
             </section>
             <div id="practice-definitions-container" class="practice-definitions-container">

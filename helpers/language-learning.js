@@ -27,11 +27,10 @@ let words = [
     ['lake', '湖', 'みずうみ'],
     ['tidy up', '片付ける', 'かづける', 'かづ'],
     ['catch', '捕まえる', 'つかまえる', 'つか'],
-    ['shore', '岸', 'きし'],
     ['hill, slope', '坂', 'さか'],
     ['dead end', '行き止まり', 'いきどまり', 'い ど'],
     ['muggy', '蒸し暑い', 'むしあつい', 'む あつ'],
-    ['rare', '珍しい', 'めずらしい', 'めず'],
+    ['rare', '珍しい', 'めずらしい', 'めずら'],
     ['pretend', 'ふりをする', 'ふりをする'],
     ['be born', '産(生)まれる', 'うまれる', 'う'],
     ['be worth doing', 'やりがいを感じる', 'やりがいをかんじる', ' かん'],
@@ -184,6 +183,67 @@ export const practiceHiragana = () => {
     checkHiragana();
 };
 
+// 日本語の練習
+export const practiceJapanese = () => {
+    const renderForm = () => {
+        const practiceContainer = document.getElementById('practice-japanese-container');
+        practiceContainer.innerHTML = '';
+        practiceContainer.innerHTML = `
+            <div>
+                <p id="random-word"></p>
+                <p id="yes-no"></p>    
+            </div>
+            <form>
+                <div>
+                    <label for="japanese">日本語</label>
+                    <input type="text" name="japanese" id="japanese" required autofocus>
+                </div>
+                <div>
+                    <button id="japanese-practice-form-btn" type="submit" aria-label="Check Japanese Button">SUBMIT</button>
+                </div>
+            </form>
+        `;
+    };
+
+    const checkJapanese = () => {
+        if(words.length === 0) {
+            const errorMessage = 'No vocab words.\nAdd some to play the game.';
+            showMessage(errorMessage);
+            console.log(errorMessage);
+            return;
+        }
+
+        renderForm();
+        const japanese = document.getElementById('japanese');
+        const randomWord =  document.getElementById('random-word');
+        japanese.focus();
+
+        words = shuffle(words);
+        let key = words[0][0];
+        let value = words[0][1];
+        randomWord.textContent = key;
+
+        const showCommendationAndTimeout = (commendation, japanese, value) => {
+            showCommendation(commendation, japanese, value);
+            practiceFormBtn.setAttribute('disabled', '');
+            practiceFormBtn.classList.add('disabled');
+            setTimeout(() => {
+                checkJapanese();
+            }, 1500);
+        }
+
+        const practiceFormBtn = document.getElementById('japanese-practice-form-btn');
+        practiceFormBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if(japanese.value === value) {
+                showCommendationAndTimeout(commendation);
+            }else {
+                showCommendationAndTimeout(commendation, japanese, value);
+            }
+        });
+    };
+    checkJapanese();
+}
 
 // 定義の練習
 export const practiceDefinitions = () => {
