@@ -1,7 +1,7 @@
 import { pageTitle } from "../../utils.js";
 import { practiceJapanese } from "../../helpers/language-learning.js";
 
-const English = {
+const Japanese = {
     render: () => {
         pageTitle.textContent = '日本語の練習';
         return `
@@ -16,4 +16,4 @@ const English = {
     }
 }
 
-export default English;
+export default Japanese;
