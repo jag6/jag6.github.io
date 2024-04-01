@@ -1,5 +1,5 @@
 import { pageTitle } from "../../utils.js";
-import { practiceJapanese } from "../../helpers/language-learning.js";
+import { practiceJapanese } from "../../helpers/language-learning/functions.js";
 
 const Japanese = {
     render: () => {

@@ -1,5 +1,5 @@
 import { pageTitle } from "../../utils.js";
-import { practiceHiragana } from "../../helpers/language-learning.js";
+import { practiceHiragana } from "../../helpers/language-learning/functions.js";
 
 const Hiragana = {
     render: () => {

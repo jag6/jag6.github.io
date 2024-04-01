@@ -1,5 +1,5 @@
 import { pageTitle } from "../../utils.js";
-import { practiceWords } from "../../helpers/language-learning.js";
+import { practiceWords } from "../../helpers/language-learning/functions.js";
 
 const Words = {
     render: () => {
