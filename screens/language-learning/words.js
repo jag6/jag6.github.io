@@ -7,7 +7,7 @@ const Words = {
         return `
             <section id="language-practice-header" class="language-practice-header">
                 <h1>単語を選ぶ❕</h1>
-                <section id="toggle-ruby" class="toggle-ruby"><button aria-label="Toggle Ruby Button" type="button">TOGGLE 振り仮名</button></section>
+                <section id="toggle-rt" class="toggle-rt"><button aria-label="Toggle Hiragana Button" type="button">TOGGLE 振り仮名</button></section>
             </section>
             <div id="practice-words-container" class="practice-words-container">
                 <ul id="words" class="words"></ul>

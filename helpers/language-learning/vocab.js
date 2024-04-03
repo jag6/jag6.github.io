@@ -1,4 +1,4 @@
-let learnedWords = [
+const learnedWords = [
     ['maintain', '保つ', 'たもつ'],
     ['praise', '褒める', 'ほめる'],
     ['advise', '勧める', 'すすめる'],
@@ -32,7 +32,7 @@ export const vocab = [
     ['pretend', 'ふりをする', 'ふりをする'],
     ['be born', '産(生)まれる', 'うまれる', 'う'],
     ['be worth doing', 'やりがいを感じる', 'やりがいをかんじる', ' かん'],
-    ['lose', '失う', 'うしなう', 'うし'],
+    ['lose', '失う', 'うしなう', 'うしな'],
     ['misunderstand', '勘違いする', 'かんちがいする', 'かんちが'],
     ['get dirty', '汚れる', 'よごれる', 'よご'],
     ['wrap, cover/engulf', '包む', 'つつむ', 'つつ'],
@@ -44,14 +44,13 @@ export const vocab = [
     ['turn away, chase off', '追い返す', 'おいかえす', 'お かえ'],
     ['strike, knock, beat(drum)', '叩く', 'たたく', 'たた'],
     ['complain, appeal, resort to', '訴える', 'うったえる', 'うった'],
-    ['impel, drive', '切っ掛けに', 'きっかけに'],
+    ['impel, drive', '切っ掛けに', 'き か'],
     ['insult, bad mouth', '悪口を言う', 'わるぐちをいう', 'わるぐち い'],
     ['stock price', '株価', 'かぶか'],
     ['stock market', '株式市場', 'かぶしきしじょう'],
     ['noise', '騒音', 'そうおん'],
     ['hiding place, refuge', '隠れ家', 'かくれが', 'かく が'],
     ['hold(arms), have(problems)', '抱える', 'かかえる', 'かか'],
-    ['lose, get rid of', '無くす', 'なくす', 'な'],
     ['get sick/intoxicated', '酔う', 'よう', 'よ'],
     ['tell a secret/leak info', 'ばらす', 'ばらす'],
     ['complain', '文句を言う', 'もんくをいう', 'もんく い'],
@@ -97,4 +96,7 @@ export const vocab = [
     ['decoration', '飾り', 'かざり', 'かざ'],
     ['temporary housing', '仮設住宅', 'かせつじゅうたく'],
     ['application', '申し込み', 'もうしこみ'],
+    ['welcome, meet', '迎える', 'むかえる', 'むか'],
+    ['attack, strike', '襲う', 'おそう', 'おそ'],
+    ['bell', '鈴', 'すず'],
 ];

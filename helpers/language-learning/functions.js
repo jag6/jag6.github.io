@@ -179,15 +179,15 @@ export const practiceWords = () => {
             return null;
         };
         let furigana = JSON.parse(getCookie('furigana'));
-        const toggleRuby = document.getElementById('toggle-ruby');
-        toggleRuby.addEventListener('click', () => {
+        const toggleRt = document.getElementById('toggle-rt');
+        toggleRt.addEventListener('click', () => {
             if(!furigana || furigana == '') {
                 document.cookie = 'furigana=' + JSON.stringify('clicked') + ';domain=;path=/;secure;http-only;samesite=lax;';
             }else {
                 document.cookie = 'furigana=' + JSON.stringify('') + ';domain=;path=/;secure;http-only;samesite=lax;';
             }
-            const ruby = document.querySelectorAll('ruby');
-            ruby.forEach((r) => {
+            const rt = document.querySelectorAll('rt');
+            rt.forEach((r) => {
                 r.classList.toggle('clicked');
                 window.location.reload();
             });
@@ -201,21 +201,21 @@ export const practiceWords = () => {
             wordPool.push(word);
             const li = document.createElement('li');
             li.classList.add('word');
-            const p = document.createElement('p');
             const ruby = document.createElement('ruby');
-            p.textContent = word[1];
-            p.setAttribute('chosen-word', word[0]);
+            const rt = document.createElement('rt');
+            ruby.textContent = word[1];
+            ruby.setAttribute('chosen-word', word[0]);
             if(!furigana || furigana == '') {
                 if(word[1] === word[2]) {
-                    ruby.textContent = '';
+                    rt.textContent = '';
                 }else if(!word[3]) {
-                    ruby.textContent = word[2];      
+                    rt.textContent = word[2];      
                 }else {
-                    ruby.textContent = word[3];
+                    rt.textContent = word[3];
                 }
             }
+            li.appendChild(rt);
             li.appendChild(ruby);
-            li.appendChild(p);
             wordsUl.appendChild(li);
         }
 
@@ -233,7 +233,7 @@ export const practiceWords = () => {
         const wordsLi = document.querySelectorAll('.word');
         wordsLi.forEach((word) => {
             word.addEventListener('click', () => {
-                const def = word.querySelector('p');
+                const def = word.querySelector('ruby');
                 let value = def.getAttribute('chosen-word');
                 if(wordDefinition === value) {
                     showCommendationAndTimeout(commendation)
