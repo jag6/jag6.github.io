@@ -132,4 +132,5 @@ export const vocab = [
     ['each other', 'お互い', 'おたがい', ' たが'],
     ['to swear, take an oath', '誓う', 'ちかう', 'ちか'],
     ['prick, pierce', '刺さる', 'ささる', 'さ'],
+    []
 ];
