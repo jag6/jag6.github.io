@@ -140,6 +140,8 @@ footer p { line-height: 48px; color: #dbdee2; }
     font-weight: 700; font-size: 18px; line-height: 32px;
     width: 100%; text-align: center;
 }
+.hidden { display: none; }
+.show { display: flex; }
 
 
 /*HOME*/

@@ -7,8 +7,7 @@ const Home = {
     render: async () => {
         pageTitle.textContent = '...Of the Day APP | Home';
         showLoading();
-        const catFact = await fetchAPI('https://catfact.ninja/fact');
-        const boredFix = await fetchAPI('https://www.boredapi.com/api/activity');
+        const catFact = await fetchAPI('https://catfact.ninja/facts');
         const uselessFact = await fetchAPI('https://uselessfacts.jsph.pl/api/v2/facts/random');
         const geekJoke = await fetchAPI('https://geek-jokes.sameerkumar.website/api?format=json');
         const darkJoke = await fetchAPI('https://v2.jokeapi.dev/joke/Dark?type=single');
@@ -20,10 +19,6 @@ const Home = {
                     <li>
                         <section><h2>CAT FACT</h2></section>
                         <p>${catFact.fact}</p>
-                    </li>
-                    <li>
-                        <section><h2>BORED?</h2></section>
-                        <p>${boredFix.activity}.</p>
                     </li>
                     <li>
                         <section><h2>USELESS FACT</h2></section>

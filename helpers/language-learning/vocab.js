@@ -132,5 +132,10 @@ export const vocab = [
     ['each other', 'お互い', 'おたがい', ' たが'],
     ['to swear, take an oath', '誓う', 'ちかう', 'ちか'],
     ['prick, pierce', '刺さる', 'ささる', 'さ'],
-    []
+    ['lick', '舐める', 'なめる', 'な'],
+    ['touch', '触る', 'さわる', 'さわ'],
+    ['act, play(a part)', '演じる', 'えんじる', 'えん'],
+    ['sink, set(the sun)', '沈む', 'しずむ', 'しず'],
+    ['grasp, clutch, grip', '握る', 'にぎる', 'にぎ'],
+    ['distribute, deal(cards)', '配る', 'くばる', 'くば'],
 ];
