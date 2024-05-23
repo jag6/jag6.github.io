@@ -7,7 +7,7 @@ const Home = {
     render: async () => {
         pageTitle.textContent = '...Of the Day APP | Home';
         showLoading();
-        const catFact = await fetchAPI('https://catfact.ninja/facts');
+        const catFact = await fetchAPI('https://catfact.ninja/fact');
         const uselessFact = await fetchAPI('https://uselessfacts.jsph.pl/api/v2/facts/random');
         const geekJoke = await fetchAPI('https://geek-jokes.sameerkumar.website/api?format=json');
         const darkJoke = await fetchAPI('https://v2.jokeapi.dev/joke/Dark?type=single');
