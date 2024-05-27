@@ -40,7 +40,7 @@ export const practiceHiragana = () => {
             <form>
                 <div>
                     <label for="hiragana">平仮名</label>
-                    <input type="text" name="hiragana" id="hiragana" required autofocus>
+                    <input type="text" name="hiragana" id="hiragana" autocomplete="off" required autofocus>
                 </div>
                 <div>
                     <button id="hiragana-practice-form-btn" type="submit" aria-label="Check Hiragana Button">SUBMIT</button>
@@ -102,7 +102,7 @@ export const practiceJapanese = () => {
             <form>
                 <div>
                     <label for="japanese">日本語</label>
-                    <input type="text" name="japanese" id="japanese" required autofocus>
+                    <input type="text" name="japanese" id="japanese" autocomplete="off" required autofocus>
                 </div>
                 <div>
                     <button id="japanese-practice-form-btn" type="submit" aria-label="Check Japanese Button">SUBMIT</button>
