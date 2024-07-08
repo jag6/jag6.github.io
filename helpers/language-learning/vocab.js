@@ -92,7 +92,6 @@ export const vocab = [
     ['depart, split up', '別れる', 'わかれる', 'わか'],
     ['fire a gun', '銃を撃つ', 'じゅうをうつ', 'じゅう う'],
     ['fall down', '転ぶ', 'ころぶ', 'ころ'],
-    ['bump', 'ぶつかる', 'ぶつかる'],
     ['apologize', '謝る', 'あやまる', 'あやま'],
     ['decoration', '飾り', 'かざり', 'かざ'],
     ['temporary housing', '仮設住宅', 'かせつじゅうたく'],
@@ -160,4 +159,8 @@ export const vocab = [
     ['injure, hurt (someone)', '傷付ける', 'きずつける', 'きずつ'],
     ['frame', '枠', 'わく'],
     ['approach, go near', '近寄る', 'ちかよる', 'ちかよ'],
+    ['worried, troubled', '悩む', 'なやむ', 'なや'],
+    ['ripen, mature', '熟す', 'じゅくす', 'じゅく'],
+    ['pick (flowers, fruit)', '摘む', 'つむ', 'つ'],
+    ['dry, air out', '干す', 'ほす', 'ほ'],
 ];
