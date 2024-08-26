@@ -10,7 +10,7 @@ const Home = {
         const catFact = await fetchAPI('https://catfact.ninja/fact');
         const uselessFact = await fetchAPI('https://uselessfacts.jsph.pl/api/v2/facts/random');
         const geekJoke = await fetchAPI('https://geek-jokes.sameerkumar.website/api?format=json');
-        const darkJoke = await fetchAPI('https://v2.jokeapi.dev/joke/Dark?type=single');
+        // const darkJoke = await fetchAPI('https://v2.jokeapi.dev/joke/Dark?type=single');
         hideLoading();
         return `
             ${topHeader.render('Random Stuff')}
@@ -27,10 +27,6 @@ const Home = {
                     <li>
                         <section><h2>GEEK JOKE</h2></section>
                         <p>${geekJoke.joke}</p>
-                    </li>
-                    <li>
-                        <section><h2>DARK JOKE</h2></section>
-                        <p>${darkJoke.joke}</p>
                     </li>
                     <li>
                         <section><h2>SCRIPTURE</h2></section>

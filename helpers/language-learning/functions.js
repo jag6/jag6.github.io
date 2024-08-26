@@ -64,8 +64,9 @@ export const practiceHiragana = () => {
 
         words = shuffle(words);
         let key = words[0][1];
+        let definition = words[0][0];
         let value = words[0][2];
-        randomWord.textContent = key;
+        randomWord.textContent = key + ' ' + '[' + definition + ']';
 
         const showCommendationAndTimeout = (commendation, hiragana, value) => {
             showCommendation(commendation, hiragana, value);
