@@ -194,4 +194,11 @@ export const vocab = [
     ['go numb', '痺れる', 'しびれる', 'しび'],
     ['exceed, cross over', '超える', 'こえる', 'こ'],
     ['meager, modest', '細やか', 'ささやか', 'ささ'],
+    ['appeal, call out to', '呼びかける', 'よびかける', 'よ'],
+    ['far away, remote', '遥か', 'はるか', 'はる'],
+    ['blow', '吹く', 'ふく', 'ふ'],
+    ['width; gap, difference', '幅', 'はば'],
+    ['downtown,', '繁華街', 'はんかがい'],
+    ['endeavor, try', '努める', 'つとめる', 'つと'],
+    ['persuasion', '説得', 'せっとく'],
 ];
