@@ -201,4 +201,7 @@ export const vocab = [
     ['downtown,', '繁華街', 'はんかがい'],
     ['endeavor, try', '努める', 'つとめる', 'つと'],
     ['persuasion', '説得', 'せっとく'],
+    ['treasure each encounter', '一期一会', 'いちごいちえ'],
+    ['rub salt in a wound', '泣きっ面に蜂', 'なきっつらにはち', 'な　つら　はち'],
+    ['two blessings at once', '両手に花', 'りょうてにはな', 'りょうて　はな'],
 ];

@@ -8,7 +8,7 @@ const Home = {
         pageTitle.textContent = '...Of the Day APP | Home';
         showLoading();
         const catFact = await fetchAPI('https://catfact.ninja/fact');
-        const uselessFact = await fetchAPI('https://uselessfacts.jsph.pl/api/v2/facts/random');
+        // const uselessFact = await fetchAPI('https://uselessfacts.jsph.pl/api/v2/facts/random');
         const geekJoke = await fetchAPI('https://geek-jokes.sameerkumar.website/api?format=json');
         // const darkJoke = await fetchAPI('https://v2.jokeapi.dev/joke/Dark?type=single');
         hideLoading();
@@ -19,10 +19,6 @@ const Home = {
                     <li>
                         <section><h2>CAT FACT</h2></section>
                         <p>${catFact.fact}</p>
-                    </li>
-                    <li>
-                        <section><h2>USELESS FACT</h2></section>
-                        <p>${uselessFact.text}</p>
                     </li>
                     <li>
                         <section><h2>GEEK JOKE</h2></section>

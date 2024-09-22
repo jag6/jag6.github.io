@@ -8,9 +8,8 @@ This app is a PWA (Progressive Web App) and, thus, can be installed on mobile an
 ## APIs
 - Random
     - Cat facts
-    - Useless facts
-    - Activity suggestions
     - Geek jokes (mostly Chuck Norris ones)
+    - Scripture (5x)
 - Of the Day
     - NASA astronomy photo/video with text
         -  Each day's item is saved into IndexedDB with a unique index on the date to prevent duplicates
