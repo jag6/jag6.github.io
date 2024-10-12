@@ -241,7 +241,7 @@ footer p { line-height: 48px; color: #dbdee2; }
 .back-to-learning-menu a { color: #fff; }
 .language-practice-options {
     display: flex; flex-flow: row wrap;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto; justify-content: space-between; 
 }
 .language-practice-option {
@@ -319,6 +319,19 @@ footer p { line-height: 48px; color: #dbdee2; }
     text-align: center;
     font-size: 24px; line-height: 48px;
 }
+
+.word-list { 
+    display: flex; flex-direction: column; margin: 0 auto; 
+    max-width: 1000px;
+}
+.word-list li { 
+    font-size: 20px; line-height: 40px; list-style: none; 
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex; flex-direction: row; justify-content: space-between;
+}
+.word-list li div { width: 50%; }
+.word-list div:nth-child(2) { text-align: right; }
 
 @media only screen and (max-width: 700px) {
     .practice-words-container { flex-direction: column-reverse; }

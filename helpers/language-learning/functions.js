@@ -246,3 +246,16 @@ export const practiceWords = () => {
     };
     checkWord();
 };
+
+// 単語一覧
+export const showWordList = () => {
+    const wordListContainer = document.getElementById('word-list');
+    wordListContainer.innerHTML = `
+        ${words.map((word)=> `
+            <li>
+                <div>${word[0]}</div>
+                <div>${word[1]}</div>
+            </li>
+        `).join('\n')}
+    `;
+};

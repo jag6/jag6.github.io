@@ -19,11 +19,15 @@ const LanguageLearning = {
                         <div id="practice-words" class="language-practice-option">
                             <p href="#/words">単語</p>          
                         </div>
+                        <div id="see-word-list" class="language-practice-option">
+                            <p href="#/word-list">単語一覧</p>          
+                        </div>
                     </div>
                 </div>
             </div>
         `;
-    }, after_render: () => {
+    }, 
+    after_render: () => {
         document.getElementById('practice-hiragana').addEventListener('click', () => {
             location.hash = '/hiragana';
         });
@@ -32,6 +36,9 @@ const LanguageLearning = {
         });
         document.getElementById('practice-words').addEventListener('click', () => {
             location.hash = '/words';
+        });
+        document.getElementById('see-word-list').addEventListener('click', () => {
+            location.hash = '/word-list';
         });
     }
 }
