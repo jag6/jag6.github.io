@@ -250,12 +250,32 @@ export const practiceWords = () => {
 // 単語一覧
 export const showWordList = () => {
     const wordListContainer = document.getElementById('word-list');
-    wordListContainer.innerHTML = `
-        ${words.map((word)=> `
-            <li>
-                <div>${word[0]}</div>
-                <div>${word[1]}</div>
-            </li>
-        `).join('\n')}
-    `;
+    for(let i = 0; i < words.length; i++) {
+        let word = words[i];
+        const li = document.createElement('li');
+        const div = document.createElement('div');
+        const ruby = document.createElement('ruby');
+        const rt = document.createElement('rt');
+        ruby.textContent = word[1];
+        div.textContent = word[0];
+        if(word[1] === word[2]) {
+            rt.textContent = '';
+        }else if(!word[3]) {
+            rt.textContent = word[2];      
+        }else {
+            rt.textContent = word[3];
+        }
+        li.appendChild(div);
+        const div2 = document.createElement('div');
+        div2.appendChild(rt);
+        div2.appendChild(ruby);
+        li.appendChild(div2);
+        wordListContainer.appendChild(li);
+    }
+    const rt = document.querySelectorAll('rt');
+    rt.forEach((r) => {
+        if(r.textContent === '') {
+            r.style.marginTop = '14px';
+        }
+    });
 };
