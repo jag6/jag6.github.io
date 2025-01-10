@@ -27,3 +27,4 @@ This app is a PWA (Progressive Web App) and, thus, can be installed on mobile an
         - type the correct hiragana for each given word
     - Japanese Practice
         - type the correct hiragana for each given word
+    - Word List
